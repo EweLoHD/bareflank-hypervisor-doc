@@ -85,7 +85,6 @@ $(document).ready(function(){initNavTree('classvmmctl_1_1vmmctl__main.html','');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classvmmctl_1_1vmmctl__main-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">vmmctl::vmmctl_main Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -94,72 +93,19 @@ $(document).ready(function(){initNavTree('classvmmctl_1_1vmmctl__main.html','');
 <p>Provides the main implementation of the vmmctl application. This application is used to start and stop the VMM as well as to dump the contents of the VMM's internal debug ring to the console for debugging.  
  <a href="classvmmctl_1_1vmmctl__main.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mocks_2vmmctl__main_8hpp_source.html">vmmctl_main.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="vmmctl__main_8hpp_source.html">vmmctl_main.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ae8dd4d33a045f63421ba9b7e71248ee8"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvmmctl_1_1vmmctl__main.html#ae8dd4d33a045f63421ba9b7e71248ee8">process</a> (bsl::arguments &amp;mut_args, <a class="el" href="namespacevmmctl.html#a2c2d5a865fbcadfd55b545991a873cf5">ioctl_t</a> &amp;mut_ioctl) noexcept -&gt; bsl::errc_type</td></tr>
 <tr class="memdesc:ae8dd4d33a045f63421ba9b7e71248ee8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the user provided command line arguments. If the user provided command succeeds, this function will return bsl::errc_success, otherwise this function will return bsl::errc_failure.  <a href="classvmmctl_1_1vmmctl__main.html#ae8dd4d33a045f63421ba9b7e71248ee8">More...</a><br /></td></tr>
 <tr class="separator:ae8dd4d33a045f63421ba9b7e71248ee8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:afe8b6d004592c4f969c7bfcd295c8239"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvmmctl_1_1vmmctl__main.html#afe8b6d004592c4f969c7bfcd295c8239">process</a> (bsl::arguments &amp;mut_args, <a class="el" href="namespacevmmctl.html#a2c2d5a865fbcadfd55b545991a873cf5">ioctl_t</a> const &amp;ioctl) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:afe8b6d004592c4f969c7bfcd295c8239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the user provided command line arguments. If the user provided command succeeds, this function will return bsl::errc_success, otherwise this function will return bsl::errc_failure.  <a href="classvmmctl_1_1vmmctl__main.html#afe8b6d004592c4f969c7bfcd295c8239">More...</a><br /></td></tr>
-<tr class="separator:afe8b6d004592c4f969c7bfcd295c8239"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Provides the main implementation of the vmmctl application. This application is used to start and stop the VMM as well as to dump the contents of the VMM's internal debug ring to the console for debugging. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="afe8b6d004592c4f969c7bfcd295c8239" name="afe8b6d004592c4f969c7bfcd295c8239"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe8b6d004592c4f969c7bfcd295c8239">&#9670;&nbsp;</a></span>process() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto vmmctl::vmmctl_main::process </td>
-          <td>(</td>
-          <td class="paramtype">bsl::arguments &amp;&#160;</td>
-          <td class="paramname"><em>mut_args</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacevmmctl.html#a2c2d5a865fbcadfd55b545991a873cf5">ioctl_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ioctl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Process the user provided command line arguments. If the user provided command succeeds, this function will return bsl::errc_success, otherwise this function will return bsl::errc_failure. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mut_args</td><td>the command line arguments provided by the user. </td></tr>
-    <tr><td class="paramname">ioctl</td><td>the ioctl_t to use </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If the user provided command succeeds, this function will return bsl::errc_success, otherwise this function will return bsl::errc_failure. </dd></dl>
-
-</div>
-</div>
 <a id="ae8dd4d33a045f63421ba9b7e71248ee8" name="ae8dd4d33a045f63421ba9b7e71248ee8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8dd4d33a045f63421ba9b7e71248ee8">&#9670;&nbsp;</a></span>process() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8dd4d33a045f63421ba9b7e71248ee8">&#9670;&nbsp;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -205,9 +151,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>vmmctl/mocks/<a class="el" href="mocks_2vmmctl__main_8hpp_source.html">vmmctl_main.hpp</a></li>
-<li>vmmctl/src/<a class="el" href="src_2vmmctl__main_8hpp_source.html">vmmctl_main.hpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>vmmctl/src/<a class="el" href="vmmctl__main_8hpp_source.html">vmmctl_main.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

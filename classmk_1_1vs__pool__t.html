@@ -85,7 +85,6 @@ $(document).ready(function(){initNavTree('classmk_1_1vs__pool__t.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classmk_1_1vs__pool__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mk::vs_pool_t Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -94,74 +93,10 @@ $(document).ready(function(){initNavTree('classmk_1_1vs__pool__t.html',''); init
 <p>Defines the microkernel's <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>.  
  <a href="classmk_1_1vs__pool__t.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mocks_2vs__pool__t_8hpp_source.html">vs_pool_t.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="src_2vs__pool__t_8hpp_source.html">vs_pool_t.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a26a1e91bc15dccc1d9ea120bb24630cd"><td class="memItemLeft" align="right" valign="top"><a id="a26a1e91bc15dccc1d9ea120bb24630cd" name="a26a1e91bc15dccc1d9ea120bb24630cd"></a>
-constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> () noexcept</td></tr>
-<tr class="memdesc:a26a1e91bc15dccc1d9ea120bb24630cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>. <br /></td></tr>
-<tr class="separator:a26a1e91bc15dccc1d9ea120bb24630cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e40f377f7499df2b3429c7cceff1347"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a1e40f377f7499df2b3429c7cceff1347">release</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool) noexcept</td></tr>
-<tr class="memdesc:a1e40f377f7499df2b3429c7cceff1347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>.  <a href="classmk_1_1vs__pool__t.html#a1e40f377f7499df2b3429c7cceff1347">More...</a><br /></td></tr>
-<tr class="separator:a1e40f377f7499df2b3429c7cceff1347"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699967bf509576ac73a2c1a4383758d1"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a699967bf509576ac73a2c1a4383758d1">allocate</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;vmid, bsl::safe_u16 const &amp;vpid, bsl::safe_u16 const &amp;ppid) noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a699967bf509576ac73a2c1a4383758d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates a vs from the <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>.  <a href="classmk_1_1vs__pool__t.html#a699967bf509576ac73a2c1a4383758d1">More...</a><br /></td></tr>
-<tr class="separator:a699967bf509576ac73a2c1a4383758d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a597df1fdf87149c8092d8f7f8631417c"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a597df1fdf87149c8092d8f7f8631417c">deallocate</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:a597df1fdf87149c8092d8f7f8631417c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a vs previously allocated using the allocate function to the <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>.  <a href="classmk_1_1vs__pool__t.html#a597df1fdf87149c8092d8f7f8631417c">More...</a><br /></td></tr>
-<tr class="separator:a597df1fdf87149c8092d8f7f8631417c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa45bff0dfada90a687e44aa8d5c869ad"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#aa45bff0dfada90a687e44aa8d5c869ad">is_deallocated</a> (bsl::safe_u16 const &amp;vsid) const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:aa45bff0dfada90a687e44aa8d5c869ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is deallocated, false otherwise.  <a href="classmk_1_1vs__pool__t.html#aa45bff0dfada90a687e44aa8d5c869ad">More...</a><br /></td></tr>
-<tr class="separator:aa45bff0dfada90a687e44aa8d5c869ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a581e5c8363a200beabef7c5d72792f69"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a581e5c8363a200beabef7c5d72792f69">is_allocated</a> (bsl::safe_u16 const &amp;vsid) const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a581e5c8363a200beabef7c5d72792f69"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is allocated, false otherwise.  <a href="classmk_1_1vs__pool__t.html#a581e5c8363a200beabef7c5d72792f69">More...</a><br /></td></tr>
-<tr class="separator:a581e5c8363a200beabef7c5d72792f69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af871add72224ec76bed5aded4c1e0e76"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#af871add72224ec76bed5aded4c1e0e76">set_active</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;mut_tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:af871add72224ec76bed5aded4c1e0e76"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> as active.  <a href="classmk_1_1vs__pool__t.html#af871add72224ec76bed5aded4c1e0e76">More...</a><br /></td></tr>
-<tr class="separator:af871add72224ec76bed5aded4c1e0e76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66806270d5b71715f8a73a2e1b98fa44"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a66806270d5b71715f8a73a2e1b98fa44">set_inactive</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;mut_tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:a66806270d5b71715f8a73a2e1b98fa44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> as inactive.  <a href="classmk_1_1vs__pool__t.html#a66806270d5b71715f8a73a2e1b98fa44">More...</a><br /></td></tr>
-<tr class="separator:a66806270d5b71715f8a73a2e1b98fa44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3103bc7879f65fedb3d545f9d3c17567"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a3103bc7879f65fedb3d545f9d3c17567">is_active</a> (bsl::safe_u16 const &amp;vsid) const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a3103bc7879f65fedb3d545f9d3c17567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of the PP the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is active on. If the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is not active, bsl::safe_u16::failure() is returned.  <a href="classmk_1_1vs__pool__t.html#a3103bc7879f65fedb3d545f9d3c17567">More...</a><br /></td></tr>
-<tr class="separator:a3103bc7879f65fedb3d545f9d3c17567"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a883900e8440cde5d95829d4ffe04bf4b"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a883900e8440cde5d95829d4ffe04bf4b">is_active_on_this_pp</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, bsl::safe_u16 const &amp;vsid) const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:a883900e8440cde5d95829d4ffe04bf4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is active on the current PP, false otherwise.  <a href="classmk_1_1vs__pool__t.html#a883900e8440cde5d95829d4ffe04bf4b">More...</a><br /></td></tr>
-<tr class="separator:a883900e8440cde5d95829d4ffe04bf4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7984a71d4942df9071d9d47772793d54"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a7984a71d4942df9071d9d47772793d54">migrate</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;ppid, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:a7984a71d4942df9071d9d47772793d54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Migrates the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> from one PP to another.  <a href="classmk_1_1vs__pool__t.html#a7984a71d4942df9071d9d47772793d54">More...</a><br /></td></tr>
-<tr class="separator:a7984a71d4942df9071d9d47772793d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa25277b786a9e38002251d2aa75779df"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#aa25277b786a9e38002251d2aa75779df">assigned_vm</a> (bsl::safe_u16 const &amp;vsid) const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:aa25277b786a9e38002251d2aa75779df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of the VM the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is assigned to.  <a href="classmk_1_1vs__pool__t.html#aa25277b786a9e38002251d2aa75779df">More...</a><br /></td></tr>
-<tr class="separator:aa25277b786a9e38002251d2aa75779df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f8ead1d955c085750acf498b3d6cbc6"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a9f8ead1d955c085750acf498b3d6cbc6">assigned_vp</a> (bsl::safe_u16 const &amp;vsid) const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a9f8ead1d955c085750acf498b3d6cbc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of the VP the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is assigned to.  <a href="classmk_1_1vs__pool__t.html#a9f8ead1d955c085750acf498b3d6cbc6">More...</a><br /></td></tr>
-<tr class="separator:a9f8ead1d955c085750acf498b3d6cbc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0bbf4d4456cab4ced6ece1c4721cab18"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a0bbf4d4456cab4ced6ece1c4721cab18">assigned_pp</a> (bsl::safe_u16 const &amp;vsid) const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a0bbf4d4456cab4ced6ece1c4721cab18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of the PP the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is assigned to.  <a href="classmk_1_1vs__pool__t.html#a0bbf4d4456cab4ced6ece1c4721cab18">More...</a><br /></td></tr>
-<tr class="separator:a0bbf4d4456cab4ced6ece1c4721cab18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8660653371e5fa2849f10d80ca65df9a"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a8660653371e5fa2849f10d80ca65df9a">vs_assigned_to_vm</a> (bsl::safe_u16 const &amp;vmid) const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a8660653371e5fa2849f10d80ca65df9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the requested VM is assigned to a <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> in the pool, the ID of the first <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> found is returned. Otherwise, this function will return bsl::safe_u16::failure()  <a href="classmk_1_1vs__pool__t.html#a8660653371e5fa2849f10d80ca65df9a">More...</a><br /></td></tr>
-<tr class="separator:a8660653371e5fa2849f10d80ca65df9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab331c089ec17a771a0a7cc4a277ddb06"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#ab331c089ec17a771a0a7cc4a277ddb06">vs_assigned_to_pp</a> (bsl::safe_u16 const &amp;ppid) const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:ab331c089ec17a771a0a7cc4a277ddb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the requested PP is assigned to a <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> in the pool, the ID of the first <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> found is returned. Otherwise, this function will return bsl::safe_u16::failure()  <a href="classmk_1_1vs__pool__t.html#ab331c089ec17a771a0a7cc4a277ddb06">More...</a><br /></td></tr>
-<tr class="separator:ab331c089ec17a771a0a7cc4a277ddb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aebed0b50ec7055288cf8c96440a4f23d"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#aebed0b50ec7055288cf8c96440a4f23d">vs_assigned_to_vp</a> (bsl::safe_u16 const &amp;vpid) const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:aebed0b50ec7055288cf8c96440a4f23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If the requested VP is assigned to a <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> in the pool, the ID of the first <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> found is returned. Otherwise, this function will return bsl::safe_u16::failure()  <a href="classmk_1_1vs__pool__t.html#aebed0b50ec7055288cf8c96440a4f23d">More...</a><br /></td></tr>
-<tr class="separator:aebed0b50ec7055288cf8c96440a4f23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa35156317d13aaa07af03b018bc198f"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#aaa35156317d13aaa07af03b018bc198f">read</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, <a class="el" href="namespacesyscall.html#a88e3c7a4f139e3d2c85be4c8b8fc90b9">syscall::bf_reg_t</a> const reg, bsl::safe_u16 const &amp;vsid) const noexcept -&gt; bsl::safe_umx</td></tr>
-<tr class="memdesc:aaa35156317d13aaa07af03b018bc198f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads a field from the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> given a bf_reg_t defining the field to read.  <a href="classmk_1_1vs__pool__t.html#aaa35156317d13aaa07af03b018bc198f">More...</a><br /></td></tr>
-<tr class="separator:aaa35156317d13aaa07af03b018bc198f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab35311af58ef9621ec97202708db6981"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#ab35311af58ef9621ec97202708db6981">write</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, <a class="el" href="namespacesyscall.html#a88e3c7a4f139e3d2c85be4c8b8fc90b9">syscall::bf_reg_t</a> const reg, bsl::safe_umx const &amp;val, bsl::safe_u16 const &amp;vsid) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:ab35311af58ef9621ec97202708db6981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes a field to the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> given a bf_reg_t defining the field and a value to write.  <a href="classmk_1_1vs__pool__t.html#ab35311af58ef9621ec97202708db6981">More...</a><br /></td></tr>
-<tr class="separator:ab35311af58ef9621ec97202708db6981"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af612ac221fa706d21c8f969133ecbc11"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#af612ac221fa706d21c8f969133ecbc11">run</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, <a class="el" href="classmk_1_1vmexit__log__t.html">vmexit_log_t</a> &amp;mut_log) noexcept -&gt; bsl::safe_umx</td></tr>
-<tr class="memdesc:af612ac221fa706d21c8f969133ecbc11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Runs the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>. Note that this function does not return until a VMExit occurs. Once complete, this function will return the VMExit reason.  <a href="classmk_1_1vs__pool__t.html#af612ac221fa706d21c8f969133ecbc11">More...</a><br /></td></tr>
-<tr class="separator:af612ac221fa706d21c8f969133ecbc11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a315681f92c2c6b0584cc1dffaf52a78e"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a315681f92c2c6b0584cc1dffaf52a78e">clear</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:a315681f92c2c6b0584cc1dffaf52a78e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>'s internal cache. Note that this is a hardware specific function and doesn't change the actual values stored in the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>.  <a href="classmk_1_1vs__pool__t.html#a315681f92c2c6b0584cc1dffaf52a78e">More...</a><br /></td></tr>
-<tr class="separator:a315681f92c2c6b0584cc1dffaf52a78e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a1e91bc15dccc1d9ea120bb24630cd"><td class="memItemLeft" align="right" valign="top"><a id="a26a1e91bc15dccc1d9ea120bb24630cd" name="a26a1e91bc15dccc1d9ea120bb24630cd"></a>
 constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize</b> () noexcept</td></tr>
 <tr class="memdesc:a26a1e91bc15dccc1d9ea120bb24630cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>. <br /></td></tr>
@@ -244,1307 +179,12 @@ constexpr void&#160;</td><td class="memItemRight" valign="bottom"><b>initialize<
 <tr class="memitem:a75a24a8950d61d35c2bdf159c0c2d80f"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a75a24a8950d61d35c2bdf159c0c2d80f">dump</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;mut_tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;vsid) const noexcept</td></tr>
 <tr class="memdesc:a75a24a8950d61d35c2bdf159c0c2d80f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>.  <a href="classmk_1_1vs__pool__t.html#a75a24a8950d61d35c2bdf159c0c2d80f">More...</a><br /></td></tr>
 <tr class="separator:a75a24a8950d61d35c2bdf159c0c2d80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ada9f0a1cc96ade154b51ebf47c60e2df"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#ada9f0a1cc96ade154b51ebf47c60e2df">state_save_to_vs</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, <a class="el" href="structloader_1_1state__save__t.html">loader::state_save_t</a> const *const state, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:ada9f0a1cc96ade154b51ebf47c60e2df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the provided state in the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>.  <a href="classmk_1_1vs__pool__t.html#ada9f0a1cc96ade154b51ebf47c60e2df">More...</a><br /></td></tr>
-<tr class="separator:ada9f0a1cc96ade154b51ebf47c60e2df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac19f01e8b80725feea10b56bbfd9588a"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#ac19f01e8b80725feea10b56bbfd9588a">vs_to_state_save</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, <a class="el" href="structloader_1_1state__save__t.html">loader::state_save_t</a> const *const state, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:ac19f01e8b80725feea10b56bbfd9588a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> state in the provided state save.  <a href="classmk_1_1vs__pool__t.html#ac19f01e8b80725feea10b56bbfd9588a">More...</a><br /></td></tr>
-<tr class="separator:ac19f01e8b80725feea10b56bbfd9588a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbf7163262b8dc31d9ff036b1f71f8af"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#acbf7163262b8dc31d9ff036b1f71f8af">advance_ip</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:acbf7163262b8dc31d9ff036b1f71f8af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Advance the IP of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>.  <a href="classmk_1_1vs__pool__t.html#acbf7163262b8dc31d9ff036b1f71f8af">More...</a><br /></td></tr>
-<tr class="separator:acbf7163262b8dc31d9ff036b1f71f8af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab396a5e8434d7b5f646d4ead4b1feb06"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#ab396a5e8434d7b5f646d4ead4b1feb06">tlb_flush</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;vmid) noexcept</td></tr>
-<tr class="memdesc:ab396a5e8434d7b5f646d4ead4b1feb06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loops through every VS, and flushes any TLB entries associated with a VS that is assigned to the provided VM and the current PP.  <a href="classmk_1_1vs__pool__t.html#ab396a5e8434d7b5f646d4ead4b1feb06">More...</a><br /></td></tr>
-<tr class="separator:ab396a5e8434d7b5f646d4ead4b1feb06"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23762d93ee6311b67b616749d7a3ae52"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a23762d93ee6311b67b616749d7a3ae52">tlb_flush</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u64 const &amp;gla, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:a23762d93ee6311b67b616749d7a3ae52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Given a GLA, invalidates any TLB entries on this PP associated with this VS for the provided GLA.  <a href="classmk_1_1vs__pool__t.html#a23762d93ee6311b67b616749d7a3ae52">More...</a><br /></td></tr>
-<tr class="separator:a23762d93ee6311b67b616749d7a3ae52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dee6852228af92451130f44fc516a7a"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vs__pool__t.html#a8dee6852228af92451130f44fc516a7a">dump</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;vsid) noexcept</td></tr>
-<tr class="memdesc:a8dee6852228af92451130f44fc516a7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>.  <a href="classmk_1_1vs__pool__t.html#a8dee6852228af92451130f44fc516a7a">More...</a><br /></td></tr>
-<tr class="separator:a8dee6852228af92451130f44fc516a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Defines the microkernel's <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1e40f377f7499df2b3429c7cceff1347" name="a1e40f377f7499df2b3429c7cceff1347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e40f377f7499df2b3429c7cceff1347">&#9670;&nbsp;</a></span>release() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vs_pool_t::release </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Release the <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a699967bf509576ac73a2c1a4383758d1" name="a699967bf509576ac73a2c1a4383758d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a699967bf509576ac73a2c1a4383758d1">&#9670;&nbsp;</a></span>allocate() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::allocate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vmid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vpid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>ppid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Allocates a vs from the <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">vmid</td><td>The ID of the VM to assign the newly allocated <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to </td></tr>
-    <tr><td class="paramname">vpid</td><td>The ID of the VP to assign the newly allocated <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to </td></tr>
-    <tr><td class="paramname">ppid</td><td>The ID of the PP to assign the newly allocated <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns ID of the newly allocated <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> </dd></dl>
-
-</div>
-</div>
-<a id="a597df1fdf87149c8092d8f7f8631417c" name="a597df1fdf87149c8092d8f7f8631417c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a597df1fdf87149c8092d8f7f8631417c">&#9670;&nbsp;</a></span>deallocate() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vs_pool_t::deallocate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns a vs previously allocated using the allocate function to the <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to deallocate </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa45bff0dfada90a687e44aa8d5c869ad" name="aa45bff0dfada90a687e44aa8d5c869ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa45bff0dfada90a687e44aa8d5c869ad">&#9670;&nbsp;</a></span>is_deallocated() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::is_deallocated </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em></td><td>)</td>
-          <td> const -&gt; bool
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is deallocated, false otherwise. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is deallocated, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a581e5c8363a200beabef7c5d72792f69" name="a581e5c8363a200beabef7c5d72792f69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a581e5c8363a200beabef7c5d72792f69">&#9670;&nbsp;</a></span>is_allocated() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::is_allocated </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em></td><td>)</td>
-          <td> const -&gt; bool
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is allocated, false otherwise. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is allocated, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="af871add72224ec76bed5aded4c1e0e76" name="af871add72224ec76bed5aded4c1e0e76"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af871add72224ec76bed5aded4c1e0e76">&#9670;&nbsp;</a></span>set_active() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vs_pool_t::set_active </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>mut_tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> as active. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mut_tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to set as active </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a66806270d5b71715f8a73a2e1b98fa44" name="a66806270d5b71715f8a73a2e1b98fa44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66806270d5b71715f8a73a2e1b98fa44">&#9670;&nbsp;</a></span>set_inactive() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vs_pool_t::set_inactive </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>mut_tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> as inactive. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mut_tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to set as inactive </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3103bc7879f65fedb3d545f9d3c17567" name="a3103bc7879f65fedb3d545f9d3c17567"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3103bc7879f65fedb3d545f9d3c17567">&#9670;&nbsp;</a></span>is_active() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::is_active </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the ID of the PP the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is active on. If the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is not active, bsl::safe_u16::failure() is returned. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the ID of the PP the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is active on. If the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is not active, bsl::safe_u16::failure() is returned. </dd></dl>
-
-</div>
-</div>
-<a id="a883900e8440cde5d95829d4ffe04bf4b" name="a883900e8440cde5d95829d4ffe04bf4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a883900e8440cde5d95829d4ffe04bf4b">&#9670;&nbsp;</a></span>is_active_on_this_pp() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::is_active_on_this_pp </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const -&gt; bool
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is active on the current PP, false otherwise. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is active on the current PP, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a7984a71d4942df9071d9d47772793d54" name="a7984a71d4942df9071d9d47772793d54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7984a71d4942df9071d9d47772793d54">&#9670;&nbsp;</a></span>migrate() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vs_pool_t::migrate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>ppid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Migrates the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> from one PP to another. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">ppid</td><td>the ID of the PP to migrate to </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to migrate </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa25277b786a9e38002251d2aa75779df" name="aa25277b786a9e38002251d2aa75779df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa25277b786a9e38002251d2aa75779df">&#9670;&nbsp;</a></span>assigned_vm() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::assigned_vm </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the ID of the VM the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is assigned to. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the ID of the VM the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is assigned to </dd></dl>
-
-</div>
-</div>
-<a id="a9f8ead1d955c085750acf498b3d6cbc6" name="a9f8ead1d955c085750acf498b3d6cbc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f8ead1d955c085750acf498b3d6cbc6">&#9670;&nbsp;</a></span>assigned_vp() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::assigned_vp </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the ID of the VP the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is assigned to. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the ID of the VP the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is assigned to </dd></dl>
-
-</div>
-</div>
-<a id="a0bbf4d4456cab4ced6ece1c4721cab18" name="a0bbf4d4456cab4ced6ece1c4721cab18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bbf4d4456cab4ced6ece1c4721cab18">&#9670;&nbsp;</a></span>assigned_pp() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::assigned_pp </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the ID of the PP the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is assigned to. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the ID of the PP the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> is assigned to </dd></dl>
-
-</div>
-</div>
-<a id="a8660653371e5fa2849f10d80ca65df9a" name="a8660653371e5fa2849f10d80ca65df9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8660653371e5fa2849f10d80ca65df9a">&#9670;&nbsp;</a></span>vs_assigned_to_vm() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::vs_assigned_to_vm </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vmid</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>If the requested VM is assigned to a <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> in the pool, the ID of the first <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> found is returned. Otherwise, this function will return bsl::safe_u16::failure() </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vmid</td><td>the ID fo the VM to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If the requested VM is assigned to a <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> in the pool, the ID of the first <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> found is returned. Otherwise, this function will return bsl::safe_u16::failure() </dd></dl>
-
-</div>
-</div>
-<a id="ab331c089ec17a771a0a7cc4a277ddb06" name="ab331c089ec17a771a0a7cc4a277ddb06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab331c089ec17a771a0a7cc4a277ddb06">&#9670;&nbsp;</a></span>vs_assigned_to_pp() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::vs_assigned_to_pp </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>ppid</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>If the requested PP is assigned to a <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> in the pool, the ID of the first <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> found is returned. Otherwise, this function will return bsl::safe_u16::failure() </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">ppid</td><td>the ID fo the PP to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If the requested PP is assigned to a <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> in the pool, the ID of the first <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> found is returned. Otherwise, this function will return bsl::safe_u16::failure() </dd></dl>
-
-</div>
-</div>
-<a id="aebed0b50ec7055288cf8c96440a4f23d" name="aebed0b50ec7055288cf8c96440a4f23d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebed0b50ec7055288cf8c96440a4f23d">&#9670;&nbsp;</a></span>vs_assigned_to_vp() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::vs_assigned_to_vp </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vpid</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>If the requested VP is assigned to a <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> in the pool, the ID of the first <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> found is returned. Otherwise, this function will return bsl::safe_u16::failure() </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">vpid</td><td>the ID fo the VP to query </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If the requested VP is assigned to a <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> in the pool, the ID of the first <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> found is returned. Otherwise, this function will return bsl::safe_u16::failure() </dd></dl>
-
-</div>
-</div>
-<a id="ada9f0a1cc96ade154b51ebf47c60e2df" name="ada9f0a1cc96ade154b51ebf47c60e2df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada9f0a1cc96ade154b51ebf47c60e2df">&#9670;&nbsp;</a></span>state_save_to_vs() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::vs_pool_t::state_save_to_vs </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structloader_1_1state__save__t.html">loader::state_save_t</a> const *const&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Stores the provided state in the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">state</td><td>the state to set the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to save the state to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ac19f01e8b80725feea10b56bbfd9588a" name="ac19f01e8b80725feea10b56bbfd9588a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac19f01e8b80725feea10b56bbfd9588a">&#9670;&nbsp;</a></span>vs_to_state_save() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::vs_pool_t::vs_to_state_save </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structloader_1_1state__save__t.html">loader::state_save_t</a> const *const&#160;</td>
-          <td class="paramname"><em>state</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Stores the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> state in the provided state save. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">state</td><td>the state save to store the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> state to </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to get the state from </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aaa35156317d13aaa07af03b018bc198f" name="aaa35156317d13aaa07af03b018bc198f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa35156317d13aaa07af03b018bc198f">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::read </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacesyscall.html#a88e3c7a4f139e3d2c85be4c8b8fc90b9">syscall::bf_reg_t</a> const&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const -&gt; bsl::safe_umx
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reads a field from the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> given a bf_reg_t defining the field to read. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">reg</td><td>a bf_reg_t defining the field to read from the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to read from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of the requested field from the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> or bsl::safe_umx::failure() on failure. </dd></dl>
-
-</div>
-</div>
-<a id="ab35311af58ef9621ec97202708db6981" name="ab35311af58ef9621ec97202708db6981"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab35311af58ef9621ec97202708db6981">&#9670;&nbsp;</a></span>write() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::write </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacesyscall.html#a88e3c7a4f139e3d2c85be4c8b8fc90b9">syscall::bf_reg_t</a> const&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_umx const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Writes a field to the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> given a bf_reg_t defining the field and a value to write. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">reg</td><td>a bf_reg_t defining the field to write to the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> </td></tr>
-    <tr><td class="paramname">val</td><td>the value to write to the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to write to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="af612ac221fa706d21c8f969133ecbc11" name="af612ac221fa706d21c8f969133ecbc11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af612ac221fa706d21c8f969133ecbc11">&#9670;&nbsp;</a></span>run() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vs_pool_t::run </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1vmexit__log__t.html">vmexit_log_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>mut_log</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::safe_umx
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Runs the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>. Note that this function does not return until a VMExit occurs. Once complete, this function will return the VMExit reason. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">mut_log</td><td>the VMExit log to use </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the VMExit reason on success, or bsl::safe_umx::failure() on failure. </dd></dl>
-
-</div>
-</div>
-<a id="acbf7163262b8dc31d9ff036b1f71f8af" name="acbf7163262b8dc31d9ff036b1f71f8af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbf7163262b8dc31d9ff036b1f71f8af">&#9670;&nbsp;</a></span>advance_ip() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::vs_pool_t::advance_ip </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Advance the IP of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to advance the IP of </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a315681f92c2c6b0584cc1dffaf52a78e" name="a315681f92c2c6b0584cc1dffaf52a78e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a315681f92c2c6b0584cc1dffaf52a78e">&#9670;&nbsp;</a></span>clear() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vs_pool_t::clear </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Clears the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>'s internal cache. Note that this is a hardware specific function and doesn't change the actual values stored in the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to clear </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab396a5e8434d7b5f646d4ead4b1feb06" name="ab396a5e8434d7b5f646d4ead4b1feb06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab396a5e8434d7b5f646d4ead4b1feb06">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::vs_pool_t::tlb_flush </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vmid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Loops through every VS, and flushes any TLB entries associated with a VS that is assigned to the provided VM and the current PP. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">vmid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to flush </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a23762d93ee6311b67b616749d7a3ae52" name="a23762d93ee6311b67b616749d7a3ae52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23762d93ee6311b67b616749d7a3ae52">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::vs_pool_t::tlb_flush </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>gla</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Given a GLA, invalidates any TLB entries on this PP associated with this VS for the provided GLA. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">gla</td><td>the guest linear address to invalidate </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to flush </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8dee6852228af92451130f44fc516a7a" name="a8dee6852228af92451130f44fc516a7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dee6852228af92451130f44fc516a7a">&#9670;&nbsp;</a></span>dump() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::vs_pool_t::dump </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vsid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Dumps the requested <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">vsid</td><td>the ID of the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> to dump </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a943baa1a57a9ea744eaf9f57c366a28f" name="a943baa1a57a9ea744eaf9f57c366a28f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a943baa1a57a9ea744eaf9f57c366a28f">&#9670;&nbsp;</a></span>release() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a943baa1a57a9ea744eaf9f57c366a28f">&#9670;&nbsp;</a></span>release()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1589,7 +229,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aae1e4d9d5566ef108e6b2c066a5e568e" name="aae1e4d9d5566ef108e6b2c066a5e568e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae1e4d9d5566ef108e6b2c066a5e568e">&#9670;&nbsp;</a></span>allocate() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aae1e4d9d5566ef108e6b2c066a5e568e">&#9670;&nbsp;</a></span>allocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1664,7 +304,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a65d90579363b3baf9c12b191278a04de" name="a65d90579363b3baf9c12b191278a04de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65d90579363b3baf9c12b191278a04de">&#9670;&nbsp;</a></span>deallocate() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a65d90579363b3baf9c12b191278a04de">&#9670;&nbsp;</a></span>deallocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1716,7 +356,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa45bff0dfada90a687e44aa8d5c869ad" name="aa45bff0dfada90a687e44aa8d5c869ad"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa45bff0dfada90a687e44aa8d5c869ad">&#9670;&nbsp;</a></span>is_deallocated() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa45bff0dfada90a687e44aa8d5c869ad">&#9670;&nbsp;</a></span>is_deallocated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1752,7 +392,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a581e5c8363a200beabef7c5d72792f69" name="a581e5c8363a200beabef7c5d72792f69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a581e5c8363a200beabef7c5d72792f69">&#9670;&nbsp;</a></span>is_allocated() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a581e5c8363a200beabef7c5d72792f69">&#9670;&nbsp;</a></span>is_allocated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1788,7 +428,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac61e4ef7984f7ecd866df2cc1f5ab05b" name="ac61e4ef7984f7ecd866df2cc1f5ab05b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac61e4ef7984f7ecd866df2cc1f5ab05b">&#9670;&nbsp;</a></span>set_active() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61e4ef7984f7ecd866df2cc1f5ab05b">&#9670;&nbsp;</a></span>set_active()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1840,7 +480,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a66806270d5b71715f8a73a2e1b98fa44" name="a66806270d5b71715f8a73a2e1b98fa44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a66806270d5b71715f8a73a2e1b98fa44">&#9670;&nbsp;</a></span>set_inactive() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a66806270d5b71715f8a73a2e1b98fa44">&#9670;&nbsp;</a></span>set_inactive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1892,7 +532,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3103bc7879f65fedb3d545f9d3c17567" name="a3103bc7879f65fedb3d545f9d3c17567"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3103bc7879f65fedb3d545f9d3c17567">&#9670;&nbsp;</a></span>is_active() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3103bc7879f65fedb3d545f9d3c17567">&#9670;&nbsp;</a></span>is_active()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1928,7 +568,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a883900e8440cde5d95829d4ffe04bf4b" name="a883900e8440cde5d95829d4ffe04bf4b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a883900e8440cde5d95829d4ffe04bf4b">&#9670;&nbsp;</a></span>is_active_on_this_pp() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a883900e8440cde5d95829d4ffe04bf4b">&#9670;&nbsp;</a></span>is_active_on_this_pp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1975,7 +615,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="afc40492e705a860545bb2cf93904eb5d" name="afc40492e705a860545bb2cf93904eb5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc40492e705a860545bb2cf93904eb5d">&#9670;&nbsp;</a></span>migrate() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afc40492e705a860545bb2cf93904eb5d">&#9670;&nbsp;</a></span>migrate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2034,7 +674,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa25277b786a9e38002251d2aa75779df" name="aa25277b786a9e38002251d2aa75779df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa25277b786a9e38002251d2aa75779df">&#9670;&nbsp;</a></span>assigned_vm() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa25277b786a9e38002251d2aa75779df">&#9670;&nbsp;</a></span>assigned_vm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2070,7 +710,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9f8ead1d955c085750acf498b3d6cbc6" name="a9f8ead1d955c085750acf498b3d6cbc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f8ead1d955c085750acf498b3d6cbc6">&#9670;&nbsp;</a></span>assigned_vp() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9f8ead1d955c085750acf498b3d6cbc6">&#9670;&nbsp;</a></span>assigned_vp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2106,7 +746,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0bbf4d4456cab4ced6ece1c4721cab18" name="a0bbf4d4456cab4ced6ece1c4721cab18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0bbf4d4456cab4ced6ece1c4721cab18">&#9670;&nbsp;</a></span>assigned_pp() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0bbf4d4456cab4ced6ece1c4721cab18">&#9670;&nbsp;</a></span>assigned_pp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2142,7 +782,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8660653371e5fa2849f10d80ca65df9a" name="a8660653371e5fa2849f10d80ca65df9a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8660653371e5fa2849f10d80ca65df9a">&#9670;&nbsp;</a></span>vs_assigned_to_vm() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8660653371e5fa2849f10d80ca65df9a">&#9670;&nbsp;</a></span>vs_assigned_to_vm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2178,7 +818,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab331c089ec17a771a0a7cc4a277ddb06" name="ab331c089ec17a771a0a7cc4a277ddb06"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab331c089ec17a771a0a7cc4a277ddb06">&#9670;&nbsp;</a></span>vs_assigned_to_pp() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab331c089ec17a771a0a7cc4a277ddb06">&#9670;&nbsp;</a></span>vs_assigned_to_pp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2214,7 +854,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aebed0b50ec7055288cf8c96440a4f23d" name="aebed0b50ec7055288cf8c96440a4f23d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aebed0b50ec7055288cf8c96440a4f23d">&#9670;&nbsp;</a></span>vs_assigned_to_vp() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aebed0b50ec7055288cf8c96440a4f23d">&#9670;&nbsp;</a></span>vs_assigned_to_vp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2250,7 +890,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a85b48c0b1b68a567da49d9659b9311a9" name="a85b48c0b1b68a567da49d9659b9311a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85b48c0b1b68a567da49d9659b9311a9">&#9670;&nbsp;</a></span>state_save_to_vs() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b48c0b1b68a567da49d9659b9311a9">&#9670;&nbsp;</a></span>state_save_to_vs()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2309,7 +949,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a79b8de5a9c6dd23144ac306caacf4eae" name="a79b8de5a9c6dd23144ac306caacf4eae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a79b8de5a9c6dd23144ac306caacf4eae">&#9670;&nbsp;</a></span>vs_to_state_save() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a79b8de5a9c6dd23144ac306caacf4eae">&#9670;&nbsp;</a></span>vs_to_state_save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2368,7 +1008,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9a64a0f985ecea085a20c83ca80f51e9" name="a9a64a0f985ecea085a20c83ca80f51e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a64a0f985ecea085a20c83ca80f51e9">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a64a0f985ecea085a20c83ca80f51e9">&#9670;&nbsp;</a></span>read()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2429,7 +1069,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac671c643cb83891ac5f8fd6daa363acf" name="ac671c643cb83891ac5f8fd6daa363acf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac671c643cb83891ac5f8fd6daa363acf">&#9670;&nbsp;</a></span>write() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac671c643cb83891ac5f8fd6daa363acf">&#9670;&nbsp;</a></span>write()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2497,7 +1137,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aed1919fb8c38481d43c5e8ab2f11f873" name="aed1919fb8c38481d43c5e8ab2f11f873"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed1919fb8c38481d43c5e8ab2f11f873">&#9670;&nbsp;</a></span>run() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aed1919fb8c38481d43c5e8ab2f11f873">&#9670;&nbsp;</a></span>run()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2551,7 +1191,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7f47896914fe33fc397c3f8cb05b703a" name="a7f47896914fe33fc397c3f8cb05b703a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f47896914fe33fc397c3f8cb05b703a">&#9670;&nbsp;</a></span>advance_ip() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f47896914fe33fc397c3f8cb05b703a">&#9670;&nbsp;</a></span>advance_ip()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2603,7 +1243,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a92032d6dac06faf7128df9cc5c2b17b0" name="a92032d6dac06faf7128df9cc5c2b17b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92032d6dac06faf7128df9cc5c2b17b0">&#9670;&nbsp;</a></span>clear() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a92032d6dac06faf7128df9cc5c2b17b0">&#9670;&nbsp;</a></span>clear()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2655,7 +1295,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad873d7f5b69be63fbad688c28ecd9c62" name="ad873d7f5b69be63fbad688c28ecd9c62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad873d7f5b69be63fbad688c28ecd9c62">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad873d7f5b69be63fbad688c28ecd9c62">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2707,7 +1347,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad6dc7d972375511bbcd558731e7b975e" name="ad6dc7d972375511bbcd558731e7b975e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6dc7d972375511bbcd558731e7b975e">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6dc7d972375511bbcd558731e7b975e">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2766,7 +1406,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a75a24a8950d61d35c2bdf159c0c2d80f" name="a75a24a8950d61d35c2bdf159c0c2d80f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a75a24a8950d61d35c2bdf159c0c2d80f">&#9670;&nbsp;</a></span>dump() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a75a24a8950d61d35c2bdf159c0c2d80f">&#9670;&nbsp;</a></span>dump()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2817,8 +1457,7 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>kernel/mocks/<a class="el" href="mocks_2vs__pool__t_8hpp_source.html">vs_pool_t.hpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>kernel/src/<a class="el" href="src_2vs__pool__t_8hpp_source.html">vs_pool_t.hpp</a></li>
 </ul>
 </div><!-- contents -->

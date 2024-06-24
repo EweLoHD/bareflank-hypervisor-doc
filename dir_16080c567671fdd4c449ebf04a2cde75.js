@@ -9,5 +9,5 @@ var dir_16080c567671fdd4c449ebf04a2cde75 =
     [ "l3e_t.hpp", "include_2x64_2l3e__t_8hpp_source.html", null ],
     [ "missing_registers_t.hpp", "missing__registers__t_8hpp_source.html", null ],
     [ "vmexit_log_pp_t.hpp", "x64_2vmexit__log__pp__t_8hpp_source.html", null ],
-    [ "vmexit_log_record_t.hpp", "include_2x64_2vmexit__log__record__t_8hpp_source.html", null ]
+    [ "vmexit_log_record_t.hpp", "x64_2vmexit__log__record__t_8hpp_source.html", null ]
 ];

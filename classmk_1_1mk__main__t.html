@@ -85,144 +85,27 @@ $(document).ready(function(){initNavTree('classmk_1_1mk__main__t.html',''); init
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classmk_1_1mk__main__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mk::mk_main_t Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Provide the main entry point for the microkernel. The microkernel actually starts in the _start function, and immediately creates this class and calls its <a class="el" href="classmk_1_1mk__main__t.html#aeff8a38da2d6840252a3633d5bbd1cce" title="Process the mk_args_t provided by the loader. If the user provided command succeeds,...">process()</a> function to boot the microkernel, start the extensions and eventually demote the CPU. Like the other main classes, this class serves to encapsulate the entry logic into something that can be easily tested with no dependencies on global resources.  
+<p>Provide the main entry point for the microkernel. The microkernel actually starts in the _start function, and immediately creates this class and calls its <a class="el" href="classmk_1_1mk__main__t.html#af4f1d9ce209ce8a7e82881f80469859e" title="Process the mk_args_t provided by the loader. If the user provided command succeeds,...">process()</a> function to boot the microkernel, start the extensions and eventually demote the CPU. Like the other main classes, this class serves to encapsulate the entry logic into something that can be easily tested with no dependencies on global resources.  
  <a href="classmk_1_1mk__main__t.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mocks_2mk__main__t_8hpp_source.html">mk_main_t.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="mk__main__t_8hpp_source.html">mk_main_t.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:af4f1d9ce209ce8a7e82881f80469859e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1mk__main__t.html#af4f1d9ce209ce8a7e82881f80469859e">process</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;mut_tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> &amp;mut_page_pool, <a class="el" href="classmk_1_1huge__pool__t.html">huge_pool_t</a> &amp;mut_huge_pool, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> &amp;mut_intrinsic, <a class="el" href="classmk_1_1vm__pool__t.html">vm_pool_t</a> &amp;mut_vm_pool, <a class="el" href="classmk_1_1vp__pool__t.html">vp_pool_t</a> &amp;mut_vp_pool, <a class="el" href="classmk_1_1vs__pool__t.html">vs_pool_t</a> &amp;mut_vs_pool, <a class="el" href="classmk_1_1ext__pool__t.html">ext_pool_t</a> &amp;mut_ext_pool, <a class="el" href="namespacemk.html#a6eb130b521649a4ca56bb0f9902a2ce9">root_page_table_t</a> &amp;mut_system_rpt, <a class="el" href="classmk_1_1vmexit__log__t.html">vmexit_log_t</a> &amp;mut_log, <a class="el" href="structloader_1_1mk__args__t.html">loader::mk_args_t</a> &amp;mut_args) noexcept -&gt; bsl::errc_type</td></tr>
 <tr class="memdesc:af4f1d9ce209ce8a7e82881f80469859e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the <a class="el" href="structmk__args__t.html" title="Defines the arguments sent to the _start function of the microkernel. The microkernel will have it&#39;s ...">mk_args_t</a> provided by the loader. If the user provided command succeeds, this function will return bsl::errc_success, otherwise this function will return bsl::errc_failure.  <a href="classmk_1_1mk__main__t.html#af4f1d9ce209ce8a7e82881f80469859e">More...</a><br /></td></tr>
 <tr class="separator:af4f1d9ce209ce8a7e82881f80469859e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aeff8a38da2d6840252a3633d5bbd1cce"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1mk__main__t.html#aeff8a38da2d6840252a3633d5bbd1cce">process</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, <a class="el" href="classmk_1_1huge__pool__t.html">huge_pool_t</a> const &amp;huge_pool, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, <a class="el" href="classmk_1_1vm__pool__t.html">vm_pool_t</a> const &amp;vm_pool, <a class="el" href="classmk_1_1vp__pool__t.html">vp_pool_t</a> const &amp;vp_pool, <a class="el" href="classmk_1_1vs__pool__t.html">vs_pool_t</a> const &amp;vs_pool, <a class="el" href="classmk_1_1ext__pool__t.html">ext_pool_t</a> const &amp;ext_pool, <a class="el" href="namespacemk.html#a6eb130b521649a4ca56bb0f9902a2ce9">root_page_table_t</a> const &amp;system_rpt, <a class="el" href="classmk_1_1vmexit__log__t.html">vmexit_log_t</a> const &amp;log, <a class="el" href="structloader_1_1mk__args__t.html">loader::mk_args_t</a> const &amp;args) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:aeff8a38da2d6840252a3633d5bbd1cce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Process the <a class="el" href="structmk__args__t.html" title="Defines the arguments sent to the _start function of the microkernel. The microkernel will have it&#39;s ...">mk_args_t</a> provided by the loader. If the user provided command succeeds, this function will return bsl::errc_success, otherwise this function will return bsl::errc_failure.  <a href="classmk_1_1mk__main__t.html#aeff8a38da2d6840252a3633d5bbd1cce">More...</a><br /></td></tr>
-<tr class="separator:aeff8a38da2d6840252a3633d5bbd1cce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Provide the main entry point for the microkernel. The microkernel actually starts in the _start function, and immediately creates this class and calls its <a class="el" href="classmk_1_1mk__main__t.html#aeff8a38da2d6840252a3633d5bbd1cce" title="Process the mk_args_t provided by the loader. If the user provided command succeeds,...">process()</a> function to boot the microkernel, start the extensions and eventually demote the CPU. Like the other main classes, this class serves to encapsulate the entry logic into something that can be easily tested with no dependencies on global resources. </p>
+<div class="textblock"><p >Provide the main entry point for the microkernel. The microkernel actually starts in the _start function, and immediately creates this class and calls its <a class="el" href="classmk_1_1mk__main__t.html#af4f1d9ce209ce8a7e82881f80469859e" title="Process the mk_args_t provided by the loader. If the user provided command succeeds,...">process()</a> function to boot the microkernel, start the extensions and eventually demote the CPU. Like the other main classes, this class serves to encapsulate the entry logic into something that can be easily tested with no dependencies on global resources. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aeff8a38da2d6840252a3633d5bbd1cce" name="aeff8a38da2d6840252a3633d5bbd1cce"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeff8a38da2d6840252a3633d5bbd1cce">&#9670;&nbsp;</a></span>process() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::mk_main_t::process </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1huge__pool__t.html">huge_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>huge_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1vm__pool__t.html">vm_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>vm_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1vp__pool__t.html">vp_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>vp_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1vs__pool__t.html">vs_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>vs_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1ext__pool__t.html">ext_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ext_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#a6eb130b521649a4ca56bb0f9902a2ce9">root_page_table_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>system_rpt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1vmexit__log__t.html">vmexit_log_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>log</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="structloader_1_1mk__args__t.html">loader::mk_args_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>args</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Process the <a class="el" href="structmk__args__t.html" title="Defines the arguments sent to the _start function of the microkernel. The microkernel will have it&#39;s ...">mk_args_t</a> provided by the loader. If the user provided command succeeds, this function will return bsl::errc_success, otherwise this function will return bsl::errc_failure. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">huge_pool</td><td>the <a class="el" href="classmk_1_1huge__pool__t.html" title="The huge pool provides access to physically contiguous memory. The amount of memory that is available...">huge_pool_t</a> to use </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">vm_pool</td><td>the <a class="el" href="classmk_1_1vm__pool__t.html" title="Defines the microkernel&#39;s vm_pool_t.">vm_pool_t</a> to use </td></tr>
-    <tr><td class="paramname">vp_pool</td><td>the <a class="el" href="classmk_1_1vp__pool__t.html" title="Defines the microkernel&#39;s vp_pool_t.">vp_pool_t</a> to use </td></tr>
-    <tr><td class="paramname">vs_pool</td><td>the <a class="el" href="classmk_1_1vs__pool__t.html" title="Defines the microkernel&#39;s vs_pool_t.">vs_pool_t</a> to use </td></tr>
-    <tr><td class="paramname">ext_pool</td><td>the <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a> to use </td></tr>
-    <tr><td class="paramname">system_rpt</td><td>the system RPT provided by the loader </td></tr>
-    <tr><td class="paramname">log</td><td>the VMExit log to use </td></tr>
-    <tr><td class="paramname">args</td><td>the loader provided arguments to the microkernel. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>If the user provided command succeeds, this function will return bsl::errc_success, otherwise this function will return bsl::errc_failure. </dd></dl>
-
-</div>
-</div>
 <a id="af4f1d9ce209ce8a7e82881f80469859e" name="af4f1d9ce209ce8a7e82881f80469859e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4f1d9ce209ce8a7e82881f80469859e">&#9670;&nbsp;</a></span>process() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f1d9ce209ce8a7e82881f80469859e">&#9670;&nbsp;</a></span>process()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,9 +238,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>kernel/mocks/<a class="el" href="mocks_2mk__main__t_8hpp_source.html">mk_main_t.hpp</a></li>
-<li>kernel/src/<a class="el" href="src_2mk__main__t_8hpp_source.html">mk_main_t.hpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>kernel/src/<a class="el" href="mk__main__t_8hpp_source.html">mk_main_t.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

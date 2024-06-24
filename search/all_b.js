@@ -1,7 +1,7 @@
 var searchData=
 [
   ['mair_5fel2_0',['mair_el2',['../structstate__save__t.html#ae4a3058f30f95e330752cf338155ef3f',1,'state_save_t']]],
-  ['map_5fpage_5fdirect_1',['map_page_direct',['../classmk_1_1ext__t.html#a30195335e479458a28ea2f37e3483659',1,'mk::ext_t::map_page_direct(tls_t const &amp;tls, page_pool_t const &amp;page_pool, bsl::safe_u16 const &amp;vmid, bsl::safe_u64 const &amp;page_phys) noexcept -&gt; bsl::safe_u64'],['../classmk_1_1ext__t.html#a43a37314e1ecbd347a8f64071468bbe7',1,'mk::ext_t::map_page_direct(tls_t &amp;mut_tls, page_pool_t &amp;mut_page_pool, bsl::safe_u16 const &amp;vmid, bsl::safe_u64 const &amp;page_phys) noexcept -&gt; bsl::safe_u64']]],
+  ['map_5fpage_5fdirect_1',['map_page_direct',['../classmk_1_1ext__t.html#a43a37314e1ecbd347a8f64071468bbe7',1,'mk::ext_t']]],
   ['map_5fpage_5fexecute_2',['MAP_PAGE_EXECUTE',['../namespacemk.html#aaadb5330e1c43edd6b6fc3f383f89888',1,'mk']]],
   ['map_5fpage_5fre_3',['MAP_PAGE_RE',['../namespacemk.html#aaeb89da48d8f5eb8724d75e41547f298',1,'mk']]],
   ['map_5fpage_5fread_4',['MAP_PAGE_READ',['../namespacemk.html#a5e3af11581b70c593ff3b92cd324dc11',1,'mk']]],
@@ -10,7 +10,7 @@ var searchData=
   ['max_5ftls_5fsize_7',['MAX_TLS_SIZE',['../namespacesyscall.html#a741ea46b30598919151730b0fd79401d',1,'syscall']]],
   ['mbz1_8',['mbz1',['../structlib_1_1l3e__t.html#ae03870e8b383697020b21e7b1e798cb9',1,'lib::l3e_t::mbz1()'],['../structpml4te__t.html#a2ee38013942f3cb357e490048c1a0625',1,'pml4te_t::mbz1()'],['../structlib_1_1l2e__t.html#a1b2b1ede15362eae6d2ee7fbada44b02',1,'lib::l2e_t::mbz1()'],['../structlib_1_1l1e__t.html#a247b965bed60bdef1cb530aaee1657bd',1,'lib::l1e_t::mbz1()']]],
   ['mbz2_9',['mbz2',['../structlib_1_1l3e__t.html#aed7684812bd8b92dc396b827c790a7c9',1,'lib::l3e_t::mbz2()'],['../structpml4te__t.html#a8ed199a62de3abdde989199065c8a4b4',1,'pml4te_t::mbz2()']]],
-  ['migrate_10',['migrate',['../classmk_1_1vs__pool__t.html#a7984a71d4942df9071d9d47772793d54',1,'mk::vs_pool_t::migrate()'],['../classmk_1_1vs__t.html#afa5baa7b8d5805ea51789682a1f26be9',1,'mk::vs_t::migrate()'],['../classmk_1_1vs__pool__t.html#afc40492e705a860545bb2cf93904eb5d',1,'mk::vs_pool_t::migrate()'],['../classmk_1_1vs__t.html#afa5baa7b8d5805ea51789682a1f26be9',1,'mk::vs_t::migrate(tls_t const &amp;tls, intrinsic_t const &amp;intrinsic, bsl::safe_u16 const &amp;ppid) noexcept'],['../classmk_1_1vs__t.html#a7332f62bd8b8a6c40aadb71bf18eea7d',1,'mk::vs_t::migrate(tls_t &amp;mut_tls, intrinsic_t const &amp;intrinsic, bsl::safe_u16 const &amp;ppid) noexcept']]],
+  ['migrate_10',['migrate',['../classmk_1_1vs__pool__t.html#afc40492e705a860545bb2cf93904eb5d',1,'mk::vs_pool_t::migrate()'],['../classmk_1_1vs__t.html#afa5baa7b8d5805ea51789682a1f26be9',1,'mk::vs_t::migrate(tls_t const &amp;tls, intrinsic_t const &amp;intrinsic, bsl::safe_u16 const &amp;ppid) noexcept'],['../classmk_1_1vs__t.html#a7332f62bd8b8a6c40aadb71bf18eea7d',1,'mk::vs_t::migrate(tls_t &amp;mut_tls, intrinsic_t const &amp;intrinsic, bsl::safe_u16 const &amp;ppid) noexcept']]],
   ['missing_5fregisters_5ft_11',['missing_registers_t',['../structmk_1_1missing__registers__t.html',1,'mk']]],
   ['mk_12',['mk',['../namespacemk.html',1,'']]],
   ['mk_5fargs_5ft_13',['mk_args_t',['../structloader_1_1mk__args__t.html',1,'loader::mk_args_t'],['../structmk__args__t.html',1,'mk_args_t']]],
@@ -49,7 +49,7 @@ var searchData=
   ['msr_5fbitmap_5fphys_46',['msr_bitmap_phys',['../structsyscall_1_1gs__t.html#a6a8eb665d31b18ff8cd7903e7f789f5c',1,'syscall::gs_t']]],
   ['msr_5fcstar_47',['msr_cstar',['../structstate__save__t.html#accba885c9af75630495f4ad971d25872',1,'state_save_t::msr_cstar()'],['../structloader_1_1state__save__t.html#a58908efe5cf9c6c4a2dc06013fee48b9',1,'loader::state_save_t::msr_cstar()']]],
   ['msr_5fcstar_48',['MSR_CSTAR',['../namespacemk.html#a4d43fbb234f146d8ac8b7a97626fd7b4',1,'mk']]],
-  ['msr_5fdebugctl_49',['msr_debugctl',['../structstate__save__t.html#a9f65c5228cd2d50f9a588ca57f984d1f',1,'state_save_t::msr_debugctl()'],['../structloader_1_1state__save__t.html#afbb20e92cd6d6271db0423b9209d85f2',1,'loader::state_save_t::msr_debugctl()']]],
+  ['msr_5fdebugctl_49',['msr_debugctl',['../structloader_1_1state__save__t.html#afbb20e92cd6d6271db0423b9209d85f2',1,'loader::state_save_t::msr_debugctl()'],['../structstate__save__t.html#a9f65c5228cd2d50f9a588ca57f984d1f',1,'state_save_t::msr_debugctl()']]],
   ['msr_5fefer_50',['MSR_EFER',['../namespacemk.html#aa5ae0c219cd22d31b6ee722f9841ce50',1,'mk']]],
   ['msr_5fefer_51',['msr_efer',['../structstate__save__t.html#ad7c32c875ebbb267461a0f850ef1af9d',1,'state_save_t::msr_efer()'],['../structloader_1_1state__save__t.html#a0a4a4acaef9529accf7e2bf4e1412eb2',1,'loader::state_save_t::msr_efer()']]],
   ['msr_5ffmask_52',['MSR_FMASK',['../namespacemk.html#a7a2bffeadc52768b92cb731a402101e4',1,'mk']]],

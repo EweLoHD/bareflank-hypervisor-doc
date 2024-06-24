@@ -85,7 +85,6 @@ $(document).ready(function(){initNavTree('classmk_1_1ext__pool__t.html',''); ini
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classmk_1_1ext__pool__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mk::ext_pool_t Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -94,7 +93,7 @@ $(document).ready(function(){initNavTree('classmk_1_1ext__pool__t.html',''); ini
 <p>Defines the microkernel's extension pool.  
  <a href="classmk_1_1ext__pool__t.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mocks_2ext__pool__t_8hpp_source.html">ext_pool_t.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="ext__pool__t_8hpp_source.html">ext_pool_t.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -122,456 +121,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8cb6afdb7057f6dd20605a1c625db1af"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1ext__pool__t.html#a8cb6afdb7057f6dd20605a1c625db1af">dump</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, bsl::safe_u16 const &amp;extid) const noexcept</td></tr>
 <tr class="memdesc:a8cb6afdb7057f6dd20605a1c625db1af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the requested extension.  <a href="classmk_1_1ext__pool__t.html#a8cb6afdb7057f6dd20605a1c625db1af">More...</a><br /></td></tr>
 <tr class="separator:a8cb6afdb7057f6dd20605a1c625db1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad1fee5033d59c849422da5f6cd0b9a2e"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1ext__pool__t.html#ad1fee5033d59c849422da5f6cd0b9a2e">initialize</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, <a class="el" href="classmk_1_1huge__pool__t.html">huge_pool_t</a> const &amp;huge_pool, <a class="el" href="namespacemk.html#a6eb130b521649a4ca56bb0f9902a2ce9">root_page_table_t</a> const &amp;system_rpt, <a class="el" href="namespaceloader.html#a593e06ccebaeedbd691c410b182fadb1">loader::ext_elf_files_t</a> const &amp;elf_files) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:ad1fee5033d59c849422da5f6cd0b9a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a>.  <a href="classmk_1_1ext__pool__t.html#ad1fee5033d59c849422da5f6cd0b9a2e">More...</a><br /></td></tr>
-<tr class="separator:ad1fee5033d59c849422da5f6cd0b9a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b26fc1bca04523ab06427ec148eb72d"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1ext__pool__t.html#a1b26fc1bca04523ab06427ec148eb72d">release</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, <a class="el" href="classmk_1_1huge__pool__t.html">huge_pool_t</a> const &amp;huge_pool) noexcept</td></tr>
-<tr class="memdesc:a1b26fc1bca04523ab06427ec148eb72d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a>.  <a href="classmk_1_1ext__pool__t.html#a1b26fc1bca04523ab06427ec148eb72d">More...</a><br /></td></tr>
-<tr class="separator:a1b26fc1bca04523ab06427ec148eb72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2561ba8f03350e0e52e90262594a5525"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1ext__pool__t.html#a2561ba8f03350e0e52e90262594a5525">signal_vm_created</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, bsl::safe_u16 const &amp;vmid) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a2561ba8f03350e0e52e90262594a5525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells each extension that a VM was created so that it can initialize it's VM specific resources.  <a href="classmk_1_1ext__pool__t.html#a2561ba8f03350e0e52e90262594a5525">More...</a><br /></td></tr>
-<tr class="separator:a2561ba8f03350e0e52e90262594a5525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ce3287117eca5472edc368a041f63a9"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1ext__pool__t.html#a0ce3287117eca5472edc368a041f63a9">signal_vm_destroyed</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, bsl::safe_u16 const &amp;vmid) noexcept</td></tr>
-<tr class="memdesc:a0ce3287117eca5472edc368a041f63a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells each extension that a VM was destroyed so that it can release it's VM specific resources.  <a href="classmk_1_1ext__pool__t.html#a0ce3287117eca5472edc368a041f63a9">More...</a><br /></td></tr>
-<tr class="separator:a0ce3287117eca5472edc368a041f63a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9546851efe55604fb54f23cf990360"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1ext__pool__t.html#a5b9546851efe55604fb54f23cf990360">signal_vm_active</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic, bsl::safe_u16 const &amp;vmid) noexcept</td></tr>
-<tr class="memdesc:a5b9546851efe55604fb54f23cf990360"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tells the extensions that the requested VM was set to active and therefore it's memory map should change on this PP.  <a href="classmk_1_1ext__pool__t.html#a5b9546851efe55604fb54f23cf990360">More...</a><br /></td></tr>
-<tr class="separator:a5b9546851efe55604fb54f23cf990360"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab150d90ec89336fc094b9aa3c8a4927f"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1ext__pool__t.html#ab150d90ec89336fc094b9aa3c8a4927f">start</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:ab150d90ec89336fc094b9aa3c8a4927f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts this <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a> by calling all of the extension's _start entry points.  <a href="classmk_1_1ext__pool__t.html#ab150d90ec89336fc094b9aa3c8a4927f">More...</a><br /></td></tr>
-<tr class="separator:ab150d90ec89336fc094b9aa3c8a4927f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ec3ee9798c51908648b07ae65bc17c8"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1ext__pool__t.html#a0ec3ee9798c51908648b07ae65bc17c8">bootstrap</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;mut_tls, <a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;intrinsic) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a0ec3ee9798c51908648b07ae65bc17c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bootstraps this <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a> by calling all of the registered bootstrap callbacks for each extension.  <a href="classmk_1_1ext__pool__t.html#a0ec3ee9798c51908648b07ae65bc17c8">More...</a><br /></td></tr>
-<tr class="separator:a0ec3ee9798c51908648b07ae65bc17c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a57ee196991bf3c52f25950509411f4"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1ext__pool__t.html#a1a57ee196991bf3c52f25950509411f4">dump</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, bsl::safe_u16 const &amp;extid) noexcept</td></tr>
-<tr class="memdesc:a1a57ee196991bf3c52f25950509411f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the requested extension.  <a href="classmk_1_1ext__pool__t.html#a1a57ee196991bf3c52f25950509411f4">More...</a><br /></td></tr>
-<tr class="separator:a1a57ee196991bf3c52f25950509411f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Defines the microkernel's extension pool. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad1fee5033d59c849422da5f6cd0b9a2e" name="ad1fee5033d59c849422da5f6cd0b9a2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1fee5033d59c849422da5f6cd0b9a2e">&#9670;&nbsp;</a></span>initialize() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::ext_pool_t::initialize </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1huge__pool__t.html">huge_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>huge_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#a6eb130b521649a4ca56bb0f9902a2ce9">root_page_table_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>system_rpt</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceloader.html#a593e06ccebaeedbd691c410b182fadb1">loader::ext_elf_files_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>elf_files</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initializes this <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">huge_pool</td><td>the <a class="el" href="classmk_1_1huge__pool__t.html" title="The huge pool provides access to physically contiguous memory. The amount of memory that is available...">huge_pool_t</a> to use </td></tr>
-    <tr><td class="paramname">system_rpt</td><td>the system RPT provided by the loader </td></tr>
-    <tr><td class="paramname">elf_files</td><td>the ext_elf_files provided by the loader </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a1b26fc1bca04523ab06427ec148eb72d" name="a1b26fc1bca04523ab06427ec148eb72d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b26fc1bca04523ab06427ec148eb72d">&#9670;&nbsp;</a></span>release() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::ext_pool_t::release </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1huge__pool__t.html">huge_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>huge_pool</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Release the <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">huge_pool</td><td>the <a class="el" href="classmk_1_1huge__pool__t.html" title="The huge pool provides access to physically contiguous memory. The amount of memory that is available...">huge_pool_t</a> to use </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2561ba8f03350e0e52e90262594a5525" name="a2561ba8f03350e0e52e90262594a5525"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2561ba8f03350e0e52e90262594a5525">&#9670;&nbsp;</a></span>signal_vm_created() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::ext_pool_t::signal_vm_created </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vmid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Tells each extension that a VM was created so that it can initialize it's VM specific resources. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">vmid</td><td>the ID of the VM that was created. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a0ce3287117eca5472edc368a041f63a9" name="a0ce3287117eca5472edc368a041f63a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ce3287117eca5472edc368a041f63a9">&#9670;&nbsp;</a></span>signal_vm_destroyed() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::ext_pool_t::signal_vm_destroyed </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vmid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Tells each extension that a VM was destroyed so that it can release it's VM specific resources. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">vmid</td><td>the ID of the VM that was destroyed. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a5b9546851efe55604fb54f23cf990360" name="a5b9546851efe55604fb54f23cf990360"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b9546851efe55604fb54f23cf990360">&#9670;&nbsp;</a></span>signal_vm_active() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::ext_pool_t::signal_vm_active </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vmid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Tells the extensions that the requested VM was set to active and therefore it's memory map should change on this PP. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-    <tr><td class="paramname">vmid</td><td>the ID of the VM that was created. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab150d90ec89336fc094b9aa3c8a4927f" name="ab150d90ec89336fc094b9aa3c8a4927f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab150d90ec89336fc094b9aa3c8a4927f">&#9670;&nbsp;</a></span>start() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::ext_pool_t::start </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Starts this <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a> by calling all of the extension's _start entry points. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a0ec3ee9798c51908648b07ae65bc17c8" name="a0ec3ee9798c51908648b07ae65bc17c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ec3ee9798c51908648b07ae65bc17c8">&#9670;&nbsp;</a></span>bootstrap() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::ext_pool_t::bootstrap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>mut_tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1intrinsic__t.html">intrinsic_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>intrinsic</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Bootstraps this <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a> by calling all of the registered bootstrap callbacks for each extension. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mut_tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">intrinsic</td><td>the <a class="el" href="classmk_1_1intrinsic__t.html" title="Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a...">intrinsic_t</a> to use </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a1a57ee196991bf3c52f25950509411f4" name="a1a57ee196991bf3c52f25950509411f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a57ee196991bf3c52f25950509411f4">&#9670;&nbsp;</a></span>dump() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::ext_pool_t::dump </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>extid</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Dumps the requested extension. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">extid</td><td>the ID of the extension to dump </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a8942bbe5f72582bb16ec1aa0ad9886eb" name="a8942bbe5f72582bb16ec1aa0ad9886eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8942bbe5f72582bb16ec1aa0ad9886eb">&#9670;&nbsp;</a></span>initialize() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8942bbe5f72582bb16ec1aa0ad9886eb">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -639,7 +194,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a412b3db41a2841cfeb98ed36a04a9e68" name="a412b3db41a2841cfeb98ed36a04a9e68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a412b3db41a2841cfeb98ed36a04a9e68">&#9670;&nbsp;</a></span>release() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a412b3db41a2841cfeb98ed36a04a9e68">&#9670;&nbsp;</a></span>release()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -691,7 +246,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a591847c137424bd785b36b7080c025cc" name="a591847c137424bd785b36b7080c025cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a591847c137424bd785b36b7080c025cc">&#9670;&nbsp;</a></span>signal_vm_created() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a591847c137424bd785b36b7080c025cc">&#9670;&nbsp;</a></span>signal_vm_created()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -745,7 +300,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a5f33b47088a90ebb0958bce82c1784bc" name="a5f33b47088a90ebb0958bce82c1784bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f33b47088a90ebb0958bce82c1784bc">&#9670;&nbsp;</a></span>signal_vm_destroyed() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f33b47088a90ebb0958bce82c1784bc">&#9670;&nbsp;</a></span>signal_vm_destroyed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -797,7 +352,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad358aeb0ae2fe50bb14d72bd775f2ae9" name="ad358aeb0ae2fe50bb14d72bd775f2ae9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad358aeb0ae2fe50bb14d72bd775f2ae9">&#9670;&nbsp;</a></span>signal_vm_active() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad358aeb0ae2fe50bb14d72bd775f2ae9">&#9670;&nbsp;</a></span>signal_vm_active()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -849,7 +404,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad2275ba21289ba00ee283536b8a2ff60" name="ad2275ba21289ba00ee283536b8a2ff60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2275ba21289ba00ee283536b8a2ff60">&#9670;&nbsp;</a></span>start() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2275ba21289ba00ee283536b8a2ff60">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -896,7 +451,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a078fe27aa69dbe29398420b7c2e95d0f" name="a078fe27aa69dbe29398420b7c2e95d0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a078fe27aa69dbe29398420b7c2e95d0f">&#9670;&nbsp;</a></span>bootstrap() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a078fe27aa69dbe29398420b7c2e95d0f">&#9670;&nbsp;</a></span>bootstrap()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -943,7 +498,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8cb6afdb7057f6dd20605a1c625db1af" name="a8cb6afdb7057f6dd20605a1c625db1af"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cb6afdb7057f6dd20605a1c625db1af">&#9670;&nbsp;</a></span>dump() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cb6afdb7057f6dd20605a1c625db1af">&#9670;&nbsp;</a></span>dump()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -987,9 +542,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>kernel/mocks/<a class="el" href="mocks_2ext__pool__t_8hpp_source.html">ext_pool_t.hpp</a></li>
-<li>kernel/src/<a class="el" href="src_2ext__pool__t_8hpp_source.html">ext_pool_t.hpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>kernel/src/<a class="el" href="ext__pool__t_8hpp_source.html">ext_pool_t.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

@@ -12,5 +12,5 @@ var dir_13784dad7e10a7f2f81250da44c4bee5 =
     [ "tls_t.hpp", "include_2arm_2aarch64_2tls__t_8hpp_source.html", null ],
     [ "vmcb_t.hpp", "include_2arm_2aarch64_2vmcb__t_8hpp_source.html", null ],
     [ "vmexit_log_pp_t.hpp", "arm_2aarch64_2vmexit__log__pp__t_8hpp_source.html", null ],
-    [ "vmexit_log_record_t.hpp", "include_2arm_2aarch64_2vmexit__log__record__t_8hpp_source.html", null ]
+    [ "vmexit_log_record_t.hpp", "arm_2aarch64_2vmexit__log__record__t_8hpp_source.html", null ]
 ];

@@ -84,7 +84,6 @@ $(document).ready(function(){initNavTree('classmk_1_1intrinsic__t.html',''); ini
 
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classmk_1_1intrinsic__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mk::intrinsic_t Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
@@ -94,157 +93,10 @@ $(document).ready(function(){initNavTree('classmk_1_1intrinsic__t.html',''); ini
 <p>Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a means for the rest of the kernel to mock the intrinsics when needed during unit testing.  
  <a href="classmk_1_1intrinsic__t.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mocks_2intrinsic__t_8hpp_source.html">intrinsic_t.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="src_2arm_2aarch64_2intrinsic__t_8hpp_source.html">intrinsic_t.hpp</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:adf7b35f939366841970fbbd7e316e14c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#adf7b35f939366841970fbbd7e316e14c">tls_reg</a> (bsl::safe_u64 const &amp;reg) const noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:adf7b35f939366841970fbbd7e316e14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of a requested TLS register.  <a href="classmk_1_1intrinsic__t.html#adf7b35f939366841970fbbd7e316e14c">More...</a><br /></td></tr>
-<tr class="separator:adf7b35f939366841970fbbd7e316e14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b11da202b98b0a3b7d543a51e45fa0"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a74b11da202b98b0a3b7d543a51e45fa0">set_tls_reg</a> (bsl::safe_u64 const &amp;reg, bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:a74b11da202b98b0a3b7d543a51e45fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a requested TLS register.  <a href="classmk_1_1intrinsic__t.html#a74b11da202b98b0a3b7d543a51e45fa0">More...</a><br /></td></tr>
-<tr class="separator:a74b11da202b98b0a3b7d543a51e45fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a992d810969e56d6f80077290314a9cb9"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a992d810969e56d6f80077290314a9cb9">rdmsr</a> (bsl::safe_u32 const &amp;msr) const noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:a992d810969e56d6f80077290314a9cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of requested MSR.  <a href="classmk_1_1intrinsic__t.html#a992d810969e56d6f80077290314a9cb9">More...</a><br /></td></tr>
-<tr class="separator:a992d810969e56d6f80077290314a9cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33039aca5598d6185b7cbf53e2765aac"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a33039aca5598d6185b7cbf53e2765aac">wrmsr</a> (bsl::safe_u32 const &amp;msr, bsl::safe_u64 const &amp;val) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a33039aca5598d6185b7cbf53e2765aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of requested MSR.  <a href="classmk_1_1intrinsic__t.html#a33039aca5598d6185b7cbf53e2765aac">More...</a><br /></td></tr>
-<tr class="separator:a33039aca5598d6185b7cbf53e2765aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf7b35f939366841970fbbd7e316e14c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#adf7b35f939366841970fbbd7e316e14c">tls_reg</a> (bsl::safe_u64 const &amp;reg) const noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:adf7b35f939366841970fbbd7e316e14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of a requested TLS register.  <a href="classmk_1_1intrinsic__t.html#adf7b35f939366841970fbbd7e316e14c">More...</a><br /></td></tr>
-<tr class="separator:adf7b35f939366841970fbbd7e316e14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b11da202b98b0a3b7d543a51e45fa0"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a74b11da202b98b0a3b7d543a51e45fa0">set_tls_reg</a> (bsl::safe_u64 const &amp;reg, bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:a74b11da202b98b0a3b7d543a51e45fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a requested TLS register.  <a href="classmk_1_1intrinsic__t.html#a74b11da202b98b0a3b7d543a51e45fa0">More...</a><br /></td></tr>
-<tr class="separator:a74b11da202b98b0a3b7d543a51e45fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a992d810969e56d6f80077290314a9cb9"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a992d810969e56d6f80077290314a9cb9">rdmsr</a> (bsl::safe_u32 const &amp;msr) const noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:a992d810969e56d6f80077290314a9cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of requested MSR.  <a href="classmk_1_1intrinsic__t.html#a992d810969e56d6f80077290314a9cb9">More...</a><br /></td></tr>
-<tr class="separator:a992d810969e56d6f80077290314a9cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33039aca5598d6185b7cbf53e2765aac"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a33039aca5598d6185b7cbf53e2765aac">wrmsr</a> (bsl::safe_u32 const &amp;msr, bsl::safe_u64 const &amp;val) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a33039aca5598d6185b7cbf53e2765aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of requested MSR.  <a href="classmk_1_1intrinsic__t.html#a33039aca5598d6185b7cbf53e2765aac">More...</a><br /></td></tr>
-<tr class="separator:a33039aca5598d6185b7cbf53e2765aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f79244dacbbef8c2ccb2919f887cbd"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a00f79244dacbbef8c2ccb2919f887cbd">vmrd16</a> (bsl::safe_u64 const &amp;field, bsl::uint16 *const pmut_val) const noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a00f79244dacbbef8c2ccb2919f887cbd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of requested 16 bit VMCS field.  <a href="classmk_1_1intrinsic__t.html#a00f79244dacbbef8c2ccb2919f887cbd">More...</a><br /></td></tr>
-<tr class="separator:a00f79244dacbbef8c2ccb2919f887cbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a261b20042e062df8109dd219e6cdac4c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a261b20042e062df8109dd219e6cdac4c">vmrd16</a> (bsl::safe_u64 const &amp;field) const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a261b20042e062df8109dd219e6cdac4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of requested 16 bit VMCS field.  <a href="classmk_1_1intrinsic__t.html#a261b20042e062df8109dd219e6cdac4c">More...</a><br /></td></tr>
-<tr class="separator:a261b20042e062df8109dd219e6cdac4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad594a0a11c182fc5e0ab3c03450a2f53"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#ad594a0a11c182fc5e0ab3c03450a2f53">vmrd32</a> (bsl::safe_u64 const &amp;field, bsl::uint32 *const pmut_val) const noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:ad594a0a11c182fc5e0ab3c03450a2f53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of requested 32 bit VMCS field.  <a href="classmk_1_1intrinsic__t.html#ad594a0a11c182fc5e0ab3c03450a2f53">More...</a><br /></td></tr>
-<tr class="separator:ad594a0a11c182fc5e0ab3c03450a2f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8ade8ad3b78a44e7734fa55e2191d0c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#ac8ade8ad3b78a44e7734fa55e2191d0c">vmrd32</a> (bsl::safe_u64 const &amp;field) const noexcept -&gt; bsl::safe_u32</td></tr>
-<tr class="memdesc:ac8ade8ad3b78a44e7734fa55e2191d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of requested 32 bit VMCS field.  <a href="classmk_1_1intrinsic__t.html#ac8ade8ad3b78a44e7734fa55e2191d0c">More...</a><br /></td></tr>
-<tr class="separator:ac8ade8ad3b78a44e7734fa55e2191d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a019e3b9fb0ebdcff3b7d91be4e000411"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a019e3b9fb0ebdcff3b7d91be4e000411">vmrd64</a> (bsl::safe_u64 const &amp;field, bsl::uint64 *const pmut_val) const noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a019e3b9fb0ebdcff3b7d91be4e000411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of requested 64 bit VMCS field.  <a href="classmk_1_1intrinsic__t.html#a019e3b9fb0ebdcff3b7d91be4e000411">More...</a><br /></td></tr>
-<tr class="separator:a019e3b9fb0ebdcff3b7d91be4e000411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdae961ca5d79dfe47cfe900b9ac2edb"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#acdae961ca5d79dfe47cfe900b9ac2edb">vmrd64</a> (bsl::safe_u64 const &amp;field) const noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:acdae961ca5d79dfe47cfe900b9ac2edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of requested 64 bit VMCS field.  <a href="classmk_1_1intrinsic__t.html#acdae961ca5d79dfe47cfe900b9ac2edb">More...</a><br /></td></tr>
-<tr class="separator:acdae961ca5d79dfe47cfe900b9ac2edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a957f238020849be8b2313d9a0e3a5713"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a957f238020849be8b2313d9a0e3a5713">vmwr16</a> (bsl::safe_u64 const &amp;field, bsl::safe_u16 const &amp;val) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a957f238020849be8b2313d9a0e3a5713"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of requested 16 bit VMCS field.  <a href="classmk_1_1intrinsic__t.html#a957f238020849be8b2313d9a0e3a5713">More...</a><br /></td></tr>
-<tr class="separator:a957f238020849be8b2313d9a0e3a5713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f6ac52c1cd2f5c4da952e67e41949f0"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a6f6ac52c1cd2f5c4da952e67e41949f0">vmwr32</a> (bsl::safe_u64 const &amp;field, bsl::safe_u32 const &amp;val) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a6f6ac52c1cd2f5c4da952e67e41949f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of requested 32 bit VMCS field.  <a href="classmk_1_1intrinsic__t.html#a6f6ac52c1cd2f5c4da952e67e41949f0">More...</a><br /></td></tr>
-<tr class="separator:a6f6ac52c1cd2f5c4da952e67e41949f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77b5c6c3eeda443f5d800606788c4367"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a77b5c6c3eeda443f5d800606788c4367">vmwr64</a> (bsl::safe_u64 const &amp;field, bsl::safe_u64 const &amp;val) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a77b5c6c3eeda443f5d800606788c4367"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of requested 64 bit VMCS field.  <a href="classmk_1_1intrinsic__t.html#a77b5c6c3eeda443f5d800606788c4367">More...</a><br /></td></tr>
-<tr class="separator:a77b5c6c3eeda443f5d800606788c4367"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf7b35f939366841970fbbd7e316e14c"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#adf7b35f939366841970fbbd7e316e14c">tls_reg</a> (bsl::safe_u64 const &amp;reg) const noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:adf7b35f939366841970fbbd7e316e14c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of a requested TLS register.  <a href="classmk_1_1intrinsic__t.html#adf7b35f939366841970fbbd7e316e14c">More...</a><br /></td></tr>
-<tr class="separator:adf7b35f939366841970fbbd7e316e14c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a74b11da202b98b0a3b7d543a51e45fa0"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a74b11da202b98b0a3b7d543a51e45fa0">set_tls_reg</a> (bsl::safe_u64 const &amp;reg, bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:a74b11da202b98b0a3b7d543a51e45fa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of a requested TLS register.  <a href="classmk_1_1intrinsic__t.html#a74b11da202b98b0a3b7d543a51e45fa0">More...</a><br /></td></tr>
-<tr class="separator:a74b11da202b98b0a3b7d543a51e45fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a992d810969e56d6f80077290314a9cb9"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a992d810969e56d6f80077290314a9cb9">rdmsr</a> (bsl::safe_u32 const &amp;msr) const noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:a992d810969e56d6f80077290314a9cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of requested MSR.  <a href="classmk_1_1intrinsic__t.html#a992d810969e56d6f80077290314a9cb9">More...</a><br /></td></tr>
-<tr class="separator:a992d810969e56d6f80077290314a9cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33039aca5598d6185b7cbf53e2765aac"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a33039aca5598d6185b7cbf53e2765aac">wrmsr</a> (bsl::safe_u32 const &amp;msr, bsl::safe_u64 const &amp;val) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a33039aca5598d6185b7cbf53e2765aac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of requested MSR.  <a href="classmk_1_1intrinsic__t.html#a33039aca5598d6185b7cbf53e2765aac">More...</a><br /></td></tr>
-<tr class="separator:a33039aca5598d6185b7cbf53e2765aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ad36ea653942d38b4db0bc9c4945f0f15"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#ad36ea653942d38b4db0bc9c4945f0f15">tlb_flush</a> (bsl::safe_u64 const &amp;addr, bsl::safe_u16 const &amp;ignored={}) noexcept</td></tr>
-<tr class="memdesc:ad36ea653942d38b4db0bc9c4945f0f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates TLB entries given an address.  <a href="classmk_1_1intrinsic__t.html#ad36ea653942d38b4db0bc9c4945f0f15">More...</a><br /></td></tr>
-<tr class="separator:ad36ea653942d38b4db0bc9c4945f0f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63c2c3e2e8944b774d4169a35020379"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#ab63c2c3e2e8944b774d4169a35020379">set_rpt</a> (bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:ab63c2c3e2e8944b774d4169a35020379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of CR3.  <a href="classmk_1_1intrinsic__t.html#ab63c2c3e2e8944b774d4169a35020379">More...</a><br /></td></tr>
-<tr class="separator:ab63c2c3e2e8944b774d4169a35020379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ded778669a4022370fb37a7ab896b59"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a3ded778669a4022370fb37a7ab896b59">set_tp</a> (bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:a3ded778669a4022370fb37a7ab896b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of tp (TLS pointer)  <a href="classmk_1_1intrinsic__t.html#a3ded778669a4022370fb37a7ab896b59">More...</a><br /></td></tr>
-<tr class="separator:a3ded778669a4022370fb37a7ab896b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199650edeca1ad38b9212606ede02bfe"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a199650edeca1ad38b9212606ede02bfe">tlb_flush</a> (bsl::safe_u64 const &amp;addr, bsl::safe_u16 const &amp;asid=<a class="el" href="namespacesyscall.html#a694755c639d2f17275ef7716bf9dc12d">syscall::BF_INVALID_ID</a>) noexcept</td></tr>
-<tr class="memdesc:a199650edeca1ad38b9212606ede02bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates TLB entries given an address and an ASID. If the ASID is set to 0, an extension address is invalidated. If the ASID is non-0, a guest address is invalidated using the ASID. On AMD, this function does not invalidate an entire guest VS (the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> must be used for that operation).  <a href="classmk_1_1intrinsic__t.html#a199650edeca1ad38b9212606ede02bfe">More...</a><br /></td></tr>
-<tr class="separator:a199650edeca1ad38b9212606ede02bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63c2c3e2e8944b774d4169a35020379"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#ab63c2c3e2e8944b774d4169a35020379">set_rpt</a> (bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:ab63c2c3e2e8944b774d4169a35020379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of CR3.  <a href="classmk_1_1intrinsic__t.html#ab63c2c3e2e8944b774d4169a35020379">More...</a><br /></td></tr>
-<tr class="separator:ab63c2c3e2e8944b774d4169a35020379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ded778669a4022370fb37a7ab896b59"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a3ded778669a4022370fb37a7ab896b59">set_tp</a> (bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:a3ded778669a4022370fb37a7ab896b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of tp (TLS pointer)  <a href="classmk_1_1intrinsic__t.html#a3ded778669a4022370fb37a7ab896b59">More...</a><br /></td></tr>
-<tr class="separator:a3ded778669a4022370fb37a7ab896b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1db817bc2344b92651c816e44731613"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#aa1db817bc2344b92651c816e44731613">vmrun</a> (void *const pmut_guest_vmcb, bsl::safe_umx const &amp;guest_vmcb_phys, void *const pmut_host_vmcb, bsl::safe_umx const &amp;host_vmcb_phys, void *const pmut_missing_registers) noexcept -&gt; bsl::safe_umx</td></tr>
-<tr class="memdesc:aa1db817bc2344b92651c816e44731613"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the VMRun instruction. When this function returns a "VMExit" has occurred and must be handled.  <a href="classmk_1_1intrinsic__t.html#aa1db817bc2344b92651c816e44731613">More...</a><br /></td></tr>
-<tr class="separator:aa1db817bc2344b92651c816e44731613"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf41511f3622c46469d79c5c8e020300"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#abf41511f3622c46469d79c5c8e020300">tlb_flush</a> (bsl::safe_u64 const &amp;addr, bsl::safe_u16 const &amp;vpid=<a class="el" href="namespacesyscall.html#a694755c639d2f17275ef7716bf9dc12d">syscall::BF_INVALID_ID</a>) noexcept</td></tr>
-<tr class="memdesc:abf41511f3622c46469d79c5c8e020300"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates TLB entries given an address and a VPID. If the VPID is set to BF_INVALID_ID, an extension address is invalidated. If the VPID is valid, a guest address is invalidated using the VPID. If the address is valid, the address is invalidated for the guest. If the address is 0, the entire VM is invalidated using the currently loaded VS's EPTP. If EPTP is never set by the extension, all VMs are flushed.  <a href="classmk_1_1intrinsic__t.html#abf41511f3622c46469d79c5c8e020300">More...</a><br /></td></tr>
-<tr class="separator:abf41511f3622c46469d79c5c8e020300"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e682e67fa4efe11e3237a403041a7ec"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a8e682e67fa4efe11e3237a403041a7ec">es_selector</a> () noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a8e682e67fa4efe11e3237a403041a7ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of ES.  <a href="classmk_1_1intrinsic__t.html#a8e682e67fa4efe11e3237a403041a7ec">More...</a><br /></td></tr>
-<tr class="separator:a8e682e67fa4efe11e3237a403041a7ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb0be69f6361f8e77b5570be570ebcfb"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#aeb0be69f6361f8e77b5570be570ebcfb">cs_selector</a> () noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:aeb0be69f6361f8e77b5570be570ebcfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of CS.  <a href="classmk_1_1intrinsic__t.html#aeb0be69f6361f8e77b5570be570ebcfb">More...</a><br /></td></tr>
-<tr class="separator:aeb0be69f6361f8e77b5570be570ebcfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6677d5a8186efd3ce9d13de4e46b60cc"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a6677d5a8186efd3ce9d13de4e46b60cc">ss_selector</a> () noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a6677d5a8186efd3ce9d13de4e46b60cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of SS.  <a href="classmk_1_1intrinsic__t.html#a6677d5a8186efd3ce9d13de4e46b60cc">More...</a><br /></td></tr>
-<tr class="separator:a6677d5a8186efd3ce9d13de4e46b60cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a547c572e73acbf5003191df30ea90d67"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a547c572e73acbf5003191df30ea90d67">ds_selector</a> () noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a547c572e73acbf5003191df30ea90d67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of DS.  <a href="classmk_1_1intrinsic__t.html#a547c572e73acbf5003191df30ea90d67">More...</a><br /></td></tr>
-<tr class="separator:a547c572e73acbf5003191df30ea90d67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a200693333d84cc5c241066fd44ba1f97"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a200693333d84cc5c241066fd44ba1f97">fs_selector</a> () noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a200693333d84cc5c241066fd44ba1f97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of FS.  <a href="classmk_1_1intrinsic__t.html#a200693333d84cc5c241066fd44ba1f97">More...</a><br /></td></tr>
-<tr class="separator:a200693333d84cc5c241066fd44ba1f97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d16f38fedb82280e2c09b87f45c4da1"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a6d16f38fedb82280e2c09b87f45c4da1">gs_selector</a> () noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a6d16f38fedb82280e2c09b87f45c4da1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of GS.  <a href="classmk_1_1intrinsic__t.html#a6d16f38fedb82280e2c09b87f45c4da1">More...</a><br /></td></tr>
-<tr class="separator:a6d16f38fedb82280e2c09b87f45c4da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef6360a6d49b32f8896469e58d972817"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#aef6360a6d49b32f8896469e58d972817">tr_selector</a> () noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:aef6360a6d49b32f8896469e58d972817"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of TR.  <a href="classmk_1_1intrinsic__t.html#aef6360a6d49b32f8896469e58d972817">More...</a><br /></td></tr>
-<tr class="separator:aef6360a6d49b32f8896469e58d972817"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd5608b0f721fa2a38b1c64bccc99974"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#abd5608b0f721fa2a38b1c64bccc99974">cr0</a> () noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:abd5608b0f721fa2a38b1c64bccc99974"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of CR0.  <a href="classmk_1_1intrinsic__t.html#abd5608b0f721fa2a38b1c64bccc99974">More...</a><br /></td></tr>
-<tr class="separator:abd5608b0f721fa2a38b1c64bccc99974"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a419d77813034cfc77c5db154d0100ab2"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a419d77813034cfc77c5db154d0100ab2">cr3</a> () noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:a419d77813034cfc77c5db154d0100ab2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of CR3.  <a href="classmk_1_1intrinsic__t.html#a419d77813034cfc77c5db154d0100ab2">More...</a><br /></td></tr>
-<tr class="separator:a419d77813034cfc77c5db154d0100ab2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a23f3f83e0b0a2bd4792c606cc5ec7b04"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a23f3f83e0b0a2bd4792c606cc5ec7b04">cr4</a> () noexcept -&gt; bsl::safe_u64</td></tr>
-<tr class="memdesc:a23f3f83e0b0a2bd4792c606cc5ec7b04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of CR4.  <a href="classmk_1_1intrinsic__t.html#a23f3f83e0b0a2bd4792c606cc5ec7b04">More...</a><br /></td></tr>
-<tr class="separator:a23f3f83e0b0a2bd4792c606cc5ec7b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63c2c3e2e8944b774d4169a35020379"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#ab63c2c3e2e8944b774d4169a35020379">set_rpt</a> (bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:ab63c2c3e2e8944b774d4169a35020379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of CR3.  <a href="classmk_1_1intrinsic__t.html#ab63c2c3e2e8944b774d4169a35020379">More...</a><br /></td></tr>
-<tr class="separator:ab63c2c3e2e8944b774d4169a35020379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ded778669a4022370fb37a7ab896b59"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a3ded778669a4022370fb37a7ab896b59">set_tp</a> (bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:a3ded778669a4022370fb37a7ab896b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of tp (TLS pointer)  <a href="classmk_1_1intrinsic__t.html#a3ded778669a4022370fb37a7ab896b59">More...</a><br /></td></tr>
-<tr class="separator:a3ded778669a4022370fb37a7ab896b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a603877eb333198942721eefa46c4ec"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a3a603877eb333198942721eefa46c4ec">vmld</a> (void const *const phys) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a3a603877eb333198942721eefa46c4ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a VMCS given a pointer to the physical address of the VMCS.  <a href="classmk_1_1intrinsic__t.html#a3a603877eb333198942721eefa46c4ec">More...</a><br /></td></tr>
-<tr class="separator:a3a603877eb333198942721eefa46c4ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19e0020e2fba55b09c1327be917f4632"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a19e0020e2fba55b09c1327be917f4632">vmcl</a> (void const *const phys) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a19e0020e2fba55b09c1327be917f4632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears a VMCS given a pointer to the physical address of the VMCS.  <a href="classmk_1_1intrinsic__t.html#a19e0020e2fba55b09c1327be917f4632">More...</a><br /></td></tr>
-<tr class="separator:a19e0020e2fba55b09c1327be917f4632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2615c3408536928fba62e851620161df"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a2615c3408536928fba62e851620161df">vmwrfunc</a> (bsl::safe_u64 const &amp;field, void(*const pmut_func)() noexcept) noexcept -&gt; bsl::errc_type</td></tr>
-<tr class="memdesc:a2615c3408536928fba62e851620161df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of requested 64 bit VMCS field (function version)  <a href="classmk_1_1intrinsic__t.html#a2615c3408536928fba62e851620161df">More...</a><br /></td></tr>
-<tr class="separator:a2615c3408536928fba62e851620161df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b0d9dd382f1e2c01176ddc1bc7e8e45"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a7b0d9dd382f1e2c01176ddc1bc7e8e45">vmrun</a> (void *const pmut_missing_registers) noexcept -&gt; bsl::safe_umx</td></tr>
-<tr class="memdesc:a7b0d9dd382f1e2c01176ddc1bc7e8e45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Executes the VMLaunch/VMResume instructions. When this function returns, a "VMExit" has occurred and must be handled.  <a href="classmk_1_1intrinsic__t.html#a7b0d9dd382f1e2c01176ddc1bc7e8e45">More...</a><br /></td></tr>
-<tr class="separator:a7b0d9dd382f1e2c01176ddc1bc7e8e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a199650edeca1ad38b9212606ede02bfe"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a199650edeca1ad38b9212606ede02bfe">tlb_flush</a> (bsl::safe_u64 const &amp;addr, bsl::safe_u16 const &amp;asid=<a class="el" href="namespacesyscall.html#a694755c639d2f17275ef7716bf9dc12d">syscall::BF_INVALID_ID</a>) noexcept</td></tr>
-<tr class="memdesc:a199650edeca1ad38b9212606ede02bfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Invalidates TLB entries given an address and an ASID. If the ASID is set to 0, an extension address is invalidated. If the ASID is non-0, a guest address is invalidated using the ASID. On AMD, this function does not invalidate an entire guest VS (the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> must be used for that operation).  <a href="classmk_1_1intrinsic__t.html#a199650edeca1ad38b9212606ede02bfe">More...</a><br /></td></tr>
-<tr class="separator:a199650edeca1ad38b9212606ede02bfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab63c2c3e2e8944b774d4169a35020379"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#ab63c2c3e2e8944b774d4169a35020379">set_rpt</a> (bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:ab63c2c3e2e8944b774d4169a35020379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of CR3.  <a href="classmk_1_1intrinsic__t.html#ab63c2c3e2e8944b774d4169a35020379">More...</a><br /></td></tr>
-<tr class="separator:ab63c2c3e2e8944b774d4169a35020379"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ded778669a4022370fb37a7ab896b59"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#a3ded778669a4022370fb37a7ab896b59">set_tp</a> (bsl::safe_u64 const &amp;val) noexcept</td></tr>
-<tr class="memdesc:a3ded778669a4022370fb37a7ab896b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the value of tp (TLS pointer)  <a href="classmk_1_1intrinsic__t.html#a3ded778669a4022370fb37a7ab896b59">More...</a><br /></td></tr>
-<tr class="separator:a3ded778669a4022370fb37a7ab896b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af8fefaf2e4a8c9389c666f52b8722a2a"><td class="memItemLeft" align="right" valign="top">static constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1intrinsic__t.html#af8fefaf2e4a8c9389c666f52b8722a2a">tp</a> () noexcept -&gt; bsl::safe_u64</td></tr>
 <tr class="memdesc:af8fefaf2e4a8c9389c666f52b8722a2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the value of tp (TLS pointer)  <a href="classmk_1_1intrinsic__t.html#af8fefaf2e4a8c9389c666f52b8722a2a">More...</a><br /></td></tr>
 <tr class="separator:af8fefaf2e4a8c9389c666f52b8722a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -369,1853 +221,6 @@ Static Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Provides raw access to intrinsics. Instead of using global functions, the intrinsics class provides a means for the rest of the kernel to mock the intrinsics when needed during unit testing. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad36ea653942d38b4db0bc9c4945f0f15" name="ad36ea653942d38b4db0bc9c4945f0f15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad36ea653942d38b4db0bc9c4945f0f15">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[1/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::tlb_flush </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>ignored</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invalidates TLB entries given an address. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">addr</td><td>the address to invalidate. </td></tr>
-    <tr><td class="paramname">ignored</td><td>not supported for common code </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab63c2c3e2e8944b774d4169a35020379" name="ab63c2c3e2e8944b774d4169a35020379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63c2c3e2e8944b774d4169a35020379">&#9670;&nbsp;</a></span>set_rpt() <span class="overload">[1/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::set_rpt </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of CR3. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>the value to set CR3 to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3ded778669a4022370fb37a7ab896b59" name="a3ded778669a4022370fb37a7ab896b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[1/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::set_tp </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of tp (TLS pointer) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>the value to set tp (TLS pointer) to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a199650edeca1ad38b9212606ede02bfe" name="a199650edeca1ad38b9212606ede02bfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a199650edeca1ad38b9212606ede02bfe">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::tlb_flush </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>asid</em> = <code><a class="el" href="namespacesyscall.html#a694755c639d2f17275ef7716bf9dc12d">syscall::BF_INVALID_ID</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invalidates TLB entries given an address and an ASID. If the ASID is set to 0, an extension address is invalidated. If the ASID is non-0, a guest address is invalidated using the ASID. On AMD, this function does not invalidate an entire guest VS (the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> must be used for that operation). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">addr</td><td>the address to invalidate. </td></tr>
-    <tr><td class="paramname">asid</td><td>the ASID (as defined by AMD) to flush. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab63c2c3e2e8944b774d4169a35020379" name="ab63c2c3e2e8944b774d4169a35020379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63c2c3e2e8944b774d4169a35020379">&#9670;&nbsp;</a></span>set_rpt() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::set_rpt </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of CR3. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>the value to set CR3 to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3ded778669a4022370fb37a7ab896b59" name="a3ded778669a4022370fb37a7ab896b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[2/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::set_tp </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of tp (TLS pointer) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>the value to set tp (TLS pointer) to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="adf7b35f939366841970fbbd7e316e14c" name="adf7b35f939366841970fbbd7e316e14c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf7b35f939366841970fbbd7e316e14c">&#9670;&nbsp;</a></span>tls_reg() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::tls_reg </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>reg</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of a requested TLS register. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>the TLS register to get </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of a requested TLS register </dd></dl>
-
-</div>
-</div>
-<a id="a74b11da202b98b0a3b7d543a51e45fa0" name="a74b11da202b98b0a3b7d543a51e45fa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74b11da202b98b0a3b7d543a51e45fa0">&#9670;&nbsp;</a></span>set_tls_reg() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::intrinsic_t::set_tls_reg </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of a requested TLS register. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>the TLS register to set </td></tr>
-    <tr><td class="paramname">val</td><td>the value to set the TLS register to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a992d810969e56d6f80077290314a9cb9" name="a992d810969e56d6f80077290314a9cb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a992d810969e56d6f80077290314a9cb9">&#9670;&nbsp;</a></span>rdmsr() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::rdmsr </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u32 const &amp;&#160;</td>
-          <td class="paramname"><em>msr</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of requested MSR. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msr</td><td>the MSR to read from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of requested MSR </dd></dl>
-
-</div>
-</div>
-<a id="a33039aca5598d6185b7cbf53e2765aac" name="a33039aca5598d6185b7cbf53e2765aac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33039aca5598d6185b7cbf53e2765aac">&#9670;&nbsp;</a></span>wrmsr() <span class="overload">[1/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::wrmsr </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u32 const &amp;&#160;</td>
-          <td class="paramname"><em>msr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of requested MSR. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msr</td><td>the MSR to write to </td></tr>
-    <tr><td class="paramname">val</td><td>the value to set the MSR to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="aa1db817bc2344b92651c816e44731613" name="aa1db817bc2344b92651c816e44731613"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1db817bc2344b92651c816e44731613">&#9670;&nbsp;</a></span>vmrun() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::vmrun </td>
-          <td>(</td>
-          <td class="paramtype">void *const&#160;</td>
-          <td class="paramname"><em>pmut_guest_vmcb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_umx const &amp;&#160;</td>
-          <td class="paramname"><em>guest_vmcb_phys</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *const&#160;</td>
-          <td class="paramname"><em>pmut_host_vmcb</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_umx const &amp;&#160;</td>
-          <td class="paramname"><em>host_vmcb_phys</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void *const&#160;</td>
-          <td class="paramname"><em>pmut_missing_registers</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::safe_umx
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Executes the VMRun instruction. When this function returns a "VMExit" has occurred and must be handled. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pmut_guest_vmcb</td><td>a pointer to the guest VMCB </td></tr>
-    <tr><td class="paramname">guest_vmcb_phys</td><td>the physical address of the guest VMCB </td></tr>
-    <tr><td class="paramname">pmut_host_vmcb</td><td>a pointer to the host VMCB </td></tr>
-    <tr><td class="paramname">host_vmcb_phys</td><td>the physical address of the host VMCB </td></tr>
-    <tr><td class="paramname">pmut_missing_registers</td><td>a pointer to the missing registers </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the exit reason associated with the VMExit </dd></dl>
-
-</div>
-</div>
-<a id="abf41511f3622c46469d79c5c8e020300" name="abf41511f3622c46469d79c5c8e020300"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf41511f3622c46469d79c5c8e020300">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::tlb_flush </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>vpid</em> = <code><a class="el" href="namespacesyscall.html#a694755c639d2f17275ef7716bf9dc12d">syscall::BF_INVALID_ID</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invalidates TLB entries given an address and a VPID. If the VPID is set to BF_INVALID_ID, an extension address is invalidated. If the VPID is valid, a guest address is invalidated using the VPID. If the address is valid, the address is invalidated for the guest. If the address is 0, the entire VM is invalidated using the currently loaded VS's EPTP. If EPTP is never set by the extension, all VMs are flushed. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">addr</td><td>the address to invalidate. </td></tr>
-    <tr><td class="paramname">vpid</td><td>the VPID (as defined by Intel) to flush. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a8e682e67fa4efe11e3237a403041a7ec" name="a8e682e67fa4efe11e3237a403041a7ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e682e67fa4efe11e3237a403041a7ec">&#9670;&nbsp;</a></span>es_selector() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::es_selector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of ES. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of ES </dd></dl>
-
-</div>
-</div>
-<a id="aeb0be69f6361f8e77b5570be570ebcfb" name="aeb0be69f6361f8e77b5570be570ebcfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb0be69f6361f8e77b5570be570ebcfb">&#9670;&nbsp;</a></span>cs_selector() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::cs_selector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of CS. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of CS </dd></dl>
-
-</div>
-</div>
-<a id="a6677d5a8186efd3ce9d13de4e46b60cc" name="a6677d5a8186efd3ce9d13de4e46b60cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6677d5a8186efd3ce9d13de4e46b60cc">&#9670;&nbsp;</a></span>ss_selector() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::ss_selector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of SS. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of SS </dd></dl>
-
-</div>
-</div>
-<a id="a547c572e73acbf5003191df30ea90d67" name="a547c572e73acbf5003191df30ea90d67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a547c572e73acbf5003191df30ea90d67">&#9670;&nbsp;</a></span>ds_selector() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::ds_selector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of DS. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of DS </dd></dl>
-
-</div>
-</div>
-<a id="a200693333d84cc5c241066fd44ba1f97" name="a200693333d84cc5c241066fd44ba1f97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a200693333d84cc5c241066fd44ba1f97">&#9670;&nbsp;</a></span>fs_selector() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::fs_selector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of FS. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of FS </dd></dl>
-
-</div>
-</div>
-<a id="a6d16f38fedb82280e2c09b87f45c4da1" name="a6d16f38fedb82280e2c09b87f45c4da1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d16f38fedb82280e2c09b87f45c4da1">&#9670;&nbsp;</a></span>gs_selector() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::gs_selector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of GS. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of GS </dd></dl>
-
-</div>
-</div>
-<a id="aef6360a6d49b32f8896469e58d972817" name="aef6360a6d49b32f8896469e58d972817"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6360a6d49b32f8896469e58d972817">&#9670;&nbsp;</a></span>tr_selector() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::tr_selector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of TR. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of TR </dd></dl>
-
-</div>
-</div>
-<a id="abd5608b0f721fa2a38b1c64bccc99974" name="abd5608b0f721fa2a38b1c64bccc99974"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd5608b0f721fa2a38b1c64bccc99974">&#9670;&nbsp;</a></span>cr0() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::cr0 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of CR0. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of CR0 </dd></dl>
-
-</div>
-</div>
-<a id="a419d77813034cfc77c5db154d0100ab2" name="a419d77813034cfc77c5db154d0100ab2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a419d77813034cfc77c5db154d0100ab2">&#9670;&nbsp;</a></span>cr3() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::cr3 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of CR3. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of CR3 </dd></dl>
-
-</div>
-</div>
-<a id="a23f3f83e0b0a2bd4792c606cc5ec7b04" name="a23f3f83e0b0a2bd4792c606cc5ec7b04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23f3f83e0b0a2bd4792c606cc5ec7b04">&#9670;&nbsp;</a></span>cr4() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::cr4 </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of CR4. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of CR4 </dd></dl>
-
-</div>
-</div>
-<a id="ab63c2c3e2e8944b774d4169a35020379" name="ab63c2c3e2e8944b774d4169a35020379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63c2c3e2e8944b774d4169a35020379">&#9670;&nbsp;</a></span>set_rpt() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::set_rpt </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of CR3. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>the value to set CR3 to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3ded778669a4022370fb37a7ab896b59" name="a3ded778669a4022370fb37a7ab896b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[3/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::set_tp </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of tp (TLS pointer) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>the value to set tp (TLS pointer) to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="adf7b35f939366841970fbbd7e316e14c" name="adf7b35f939366841970fbbd7e316e14c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf7b35f939366841970fbbd7e316e14c">&#9670;&nbsp;</a></span>tls_reg() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::tls_reg </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>reg</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of a requested TLS register. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>the TLS register to get </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of a requested TLS register </dd></dl>
-
-</div>
-</div>
-<a id="a74b11da202b98b0a3b7d543a51e45fa0" name="a74b11da202b98b0a3b7d543a51e45fa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74b11da202b98b0a3b7d543a51e45fa0">&#9670;&nbsp;</a></span>set_tls_reg() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::intrinsic_t::set_tls_reg </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of a requested TLS register. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>the TLS register to set </td></tr>
-    <tr><td class="paramname">val</td><td>the value to set the TLS register to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a992d810969e56d6f80077290314a9cb9" name="a992d810969e56d6f80077290314a9cb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a992d810969e56d6f80077290314a9cb9">&#9670;&nbsp;</a></span>rdmsr() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::rdmsr </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u32 const &amp;&#160;</td>
-          <td class="paramname"><em>msr</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of requested MSR. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msr</td><td>the MSR to read from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of requested MSR </dd></dl>
-
-</div>
-</div>
-<a id="a33039aca5598d6185b7cbf53e2765aac" name="a33039aca5598d6185b7cbf53e2765aac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33039aca5598d6185b7cbf53e2765aac">&#9670;&nbsp;</a></span>wrmsr() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::wrmsr </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u32 const &amp;&#160;</td>
-          <td class="paramname"><em>msr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of requested MSR. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msr</td><td>the MSR to write to </td></tr>
-    <tr><td class="paramname">val</td><td>the value to set the MSR to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a3a603877eb333198942721eefa46c4ec" name="a3a603877eb333198942721eefa46c4ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a603877eb333198942721eefa46c4ec">&#9670;&nbsp;</a></span>vmld() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::vmld </td>
-          <td>(</td>
-          <td class="paramtype">void const *const&#160;</td>
-          <td class="paramname"><em>phys</em></td><td>)</td>
-          <td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Loads a VMCS given a pointer to the physical address of the VMCS. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">phys</td><td>a pointer to the physical address of the VMCS to load. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a19e0020e2fba55b09c1327be917f4632" name="a19e0020e2fba55b09c1327be917f4632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19e0020e2fba55b09c1327be917f4632">&#9670;&nbsp;</a></span>vmcl() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::vmcl </td>
-          <td>(</td>
-          <td class="paramtype">void const *const&#160;</td>
-          <td class="paramname"><em>phys</em></td><td>)</td>
-          <td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Clears a VMCS given a pointer to the physical address of the VMCS. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">phys</td><td>a pointer to the physical address of the VMCS to clear. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a00f79244dacbbef8c2ccb2919f887cbd" name="a00f79244dacbbef8c2ccb2919f887cbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00f79244dacbbef8c2ccb2919f887cbd">&#9670;&nbsp;</a></span>vmrd16() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::vmrd16 </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::uint16 *const&#160;</td>
-          <td class="paramname"><em>pmut_val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of requested 16 bit VMCS field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 16 bit VMCS field to read </td></tr>
-    <tr><td class="paramname">pmut_val</td><td>the value to store the 32 bit VMCS field to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a261b20042e062df8109dd219e6cdac4c" name="a261b20042e062df8109dd219e6cdac4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a261b20042e062df8109dd219e6cdac4c">&#9670;&nbsp;</a></span>vmrd16() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::vmrd16 </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of requested 16 bit VMCS field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 16 bit VMCS field to read </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the 16 bit VMCS field on success. On failure, returns bsl::uint16::failure(). </dd></dl>
-
-</div>
-</div>
-<a id="ad594a0a11c182fc5e0ab3c03450a2f53" name="ad594a0a11c182fc5e0ab3c03450a2f53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad594a0a11c182fc5e0ab3c03450a2f53">&#9670;&nbsp;</a></span>vmrd32() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::vmrd32 </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::uint32 *const&#160;</td>
-          <td class="paramname"><em>pmut_val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of requested 32 bit VMCS field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 32 bit VMCS field to read </td></tr>
-    <tr><td class="paramname">pmut_val</td><td>the value to store the 32 bit VMCS field to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="ac8ade8ad3b78a44e7734fa55e2191d0c" name="ac8ade8ad3b78a44e7734fa55e2191d0c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8ade8ad3b78a44e7734fa55e2191d0c">&#9670;&nbsp;</a></span>vmrd32() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::vmrd32 </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u32
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of requested 32 bit VMCS field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 32 bit VMCS field to read </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the 32 bit VMCS field on success. On failure, returns bsl::uint32::failure(). </dd></dl>
-
-</div>
-</div>
-<a id="a019e3b9fb0ebdcff3b7d91be4e000411" name="a019e3b9fb0ebdcff3b7d91be4e000411"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a019e3b9fb0ebdcff3b7d91be4e000411">&#9670;&nbsp;</a></span>vmrd64() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::vmrd64 </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::uint64 *const&#160;</td>
-          <td class="paramname"><em>pmut_val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of requested 64 bit VMCS field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 64 bit VMCS field to read </td></tr>
-    <tr><td class="paramname">pmut_val</td><td>the value to store the 32 bit VMCS field to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="acdae961ca5d79dfe47cfe900b9ac2edb" name="acdae961ca5d79dfe47cfe900b9ac2edb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdae961ca5d79dfe47cfe900b9ac2edb">&#9670;&nbsp;</a></span>vmrd64() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::vmrd64 </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of requested 64 bit VMCS field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 64 bit VMCS field to read </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the 64 bit VMCS field on success. On failure, returns bsl::uint64::failure(). </dd></dl>
-
-</div>
-</div>
-<a id="a957f238020849be8b2313d9a0e3a5713" name="a957f238020849be8b2313d9a0e3a5713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a957f238020849be8b2313d9a0e3a5713">&#9670;&nbsp;</a></span>vmwr16() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::vmwr16 </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of requested 16 bit VMCS field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 16 bit VMCS field to write to </td></tr>
-    <tr><td class="paramname">val</td><td>the value to set the 16 bit VMCS field to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a6f6ac52c1cd2f5c4da952e67e41949f0" name="a6f6ac52c1cd2f5c4da952e67e41949f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f6ac52c1cd2f5c4da952e67e41949f0">&#9670;&nbsp;</a></span>vmwr32() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::vmwr32 </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u32 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of requested 32 bit VMCS field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 32 bit VMCS field to write to </td></tr>
-    <tr><td class="paramname">val</td><td>the value to set the 32 bit VMCS field to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a77b5c6c3eeda443f5d800606788c4367" name="a77b5c6c3eeda443f5d800606788c4367"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77b5c6c3eeda443f5d800606788c4367">&#9670;&nbsp;</a></span>vmwr64() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::vmwr64 </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of requested 64 bit VMCS field. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 64 bit VMCS field to write to </td></tr>
-    <tr><td class="paramname">val</td><td>the value to set the 64 bit VMCS field to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a2615c3408536928fba62e851620161df" name="a2615c3408536928fba62e851620161df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2615c3408536928fba62e851620161df">&#9670;&nbsp;</a></span>vmwrfunc() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::vmwrfunc </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>field</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">void(*)() noexcept&#160;</td>
-          <td class="paramname"><em>pmut_func</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of requested 64 bit VMCS field (function version) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">field</td><td>the 64 bit VMCS field to write to </td></tr>
-    <tr><td class="paramname">pmut_func</td><td>the function value to set the 64 bit VMCS field to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a7b0d9dd382f1e2c01176ddc1bc7e8e45" name="a7b0d9dd382f1e2c01176ddc1bc7e8e45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b0d9dd382f1e2c01176ddc1bc7e8e45">&#9670;&nbsp;</a></span>vmrun() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr auto mk::intrinsic_t::vmrun </td>
-          <td>(</td>
-          <td class="paramtype">void *const&#160;</td>
-          <td class="paramname"><em>pmut_missing_registers</em></td><td>)</td>
-          <td> -&gt; bsl::safe_umx
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Executes the VMLaunch/VMResume instructions. When this function returns, a "VMExit" has occurred and must be handled. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pmut_missing_registers</td><td>a pointer to the missing registers </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the exit reason associated with the VMExit </dd></dl>
-
-</div>
-</div>
-<a id="a199650edeca1ad38b9212606ede02bfe" name="a199650edeca1ad38b9212606ede02bfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a199650edeca1ad38b9212606ede02bfe">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::tlb_flush </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>addr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>asid</em> = <code><a class="el" href="namespacesyscall.html#a694755c639d2f17275ef7716bf9dc12d">syscall::BF_INVALID_ID</a></code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Invalidates TLB entries given an address and an ASID. If the ASID is set to 0, an extension address is invalidated. If the ASID is non-0, a guest address is invalidated using the ASID. On AMD, this function does not invalidate an entire guest VS (the <a class="el" href="classmk_1_1vs__t.html" title="Defines the microkernel&#39;s notion of a VS.">vs_t</a> must be used for that operation). </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">addr</td><td>the address to invalidate. </td></tr>
-    <tr><td class="paramname">asid</td><td>the ASID (as defined by AMD) to flush. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab63c2c3e2e8944b774d4169a35020379" name="ab63c2c3e2e8944b774d4169a35020379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63c2c3e2e8944b774d4169a35020379">&#9670;&nbsp;</a></span>set_rpt() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::set_rpt </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of CR3. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>the value to set CR3 to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3ded778669a4022370fb37a7ab896b59" name="a3ded778669a4022370fb37a7ab896b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[4/7]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::intrinsic_t::set_tp </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of tp (TLS pointer) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">val</td><td>the value to set tp (TLS pointer) to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="adf7b35f939366841970fbbd7e316e14c" name="adf7b35f939366841970fbbd7e316e14c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf7b35f939366841970fbbd7e316e14c">&#9670;&nbsp;</a></span>tls_reg() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::tls_reg </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>reg</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of a requested TLS register. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>the TLS register to get </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of a requested TLS register </dd></dl>
-
-</div>
-</div>
-<a id="a74b11da202b98b0a3b7d543a51e45fa0" name="a74b11da202b98b0a3b7d543a51e45fa0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a74b11da202b98b0a3b7d543a51e45fa0">&#9670;&nbsp;</a></span>set_tls_reg() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::intrinsic_t::set_tls_reg </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>reg</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of a requested TLS register. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">reg</td><td>the TLS register to set </td></tr>
-    <tr><td class="paramname">val</td><td>the value to set the TLS register to </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a992d810969e56d6f80077290314a9cb9" name="a992d810969e56d6f80077290314a9cb9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a992d810969e56d6f80077290314a9cb9">&#9670;&nbsp;</a></span>rdmsr() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::rdmsr </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u32 const &amp;&#160;</td>
-          <td class="paramname"><em>msr</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u64
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the value of requested MSR. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msr</td><td>the MSR to read from </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the value of requested MSR </dd></dl>
-
-</div>
-</div>
-<a id="a33039aca5598d6185b7cbf53e2765aac" name="a33039aca5598d6185b7cbf53e2765aac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33039aca5598d6185b7cbf53e2765aac">&#9670;&nbsp;</a></span>wrmsr() <span class="overload">[3/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::intrinsic_t::wrmsr </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u32 const &amp;&#160;</td>
-          <td class="paramname"><em>msr</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">bsl::safe_u64 const &amp;&#160;</td>
-          <td class="paramname"><em>val</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::errc_type
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets the value of requested MSR. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">msr</td><td>the MSR to write to </td></tr>
-    <tr><td class="paramname">val</td><td>the value to set the MSR to </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns bsl::errc_success on success, bsl::errc_failure and friends otherwise </dd></dl>
-
-</div>
-</div>
 <a id="af8fefaf2e4a8c9389c666f52b8722a2a" name="af8fefaf2e4a8c9389c666f52b8722a2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8fefaf2e4a8c9389c666f52b8722a2a">&#9670;&nbsp;</a></span>tp()</h2>
 
@@ -2246,7 +251,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3ded778669a4022370fb37a7ab896b59" name="a3ded778669a4022370fb37a7ab896b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[5/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2280,7 +285,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a199650edeca1ad38b9212606ede02bfe" name="a199650edeca1ad38b9212606ede02bfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a199650edeca1ad38b9212606ede02bfe">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a199650edeca1ad38b9212606ede02bfe">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2325,7 +330,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab63c2c3e2e8944b774d4169a35020379" name="ab63c2c3e2e8944b774d4169a35020379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63c2c3e2e8944b774d4169a35020379">&#9670;&nbsp;</a></span>set_rpt() <span class="overload">[5/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63c2c3e2e8944b774d4169a35020379">&#9670;&nbsp;</a></span>set_rpt() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2359,7 +364,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3ded778669a4022370fb37a7ab896b59" name="a3ded778669a4022370fb37a7ab896b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[6/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2393,7 +398,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1afec55b62b86fa06b57abb4a46ef86b" name="a1afec55b62b86fa06b57abb4a46ef86b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1afec55b62b86fa06b57abb4a46ef86b">&#9670;&nbsp;</a></span>tls_reg() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1afec55b62b86fa06b57abb4a46ef86b">&#9670;&nbsp;</a></span>tls_reg() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2429,7 +434,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac45a1927db5ff764babca38522567580" name="ac45a1927db5ff764babca38522567580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac45a1927db5ff764babca38522567580">&#9670;&nbsp;</a></span>set_tls_reg() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac45a1927db5ff764babca38522567580">&#9670;&nbsp;</a></span>set_tls_reg() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2474,7 +479,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af153a688aa5e0023598c0069a3aab400" name="af153a688aa5e0023598c0069a3aab400"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af153a688aa5e0023598c0069a3aab400">&#9670;&nbsp;</a></span>rdmsr() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af153a688aa5e0023598c0069a3aab400">&#9670;&nbsp;</a></span>rdmsr() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2510,7 +515,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6638ea06bd1a39996aa896e2291e6f20" name="a6638ea06bd1a39996aa896e2291e6f20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6638ea06bd1a39996aa896e2291e6f20">&#9670;&nbsp;</a></span>wrmsr() <span class="overload">[4/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6638ea06bd1a39996aa896e2291e6f20">&#9670;&nbsp;</a></span>wrmsr() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2557,7 +562,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa1db817bc2344b92651c816e44731613" name="aa1db817bc2344b92651c816e44731613"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1db817bc2344b92651c816e44731613">&#9670;&nbsp;</a></span>vmrun() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1db817bc2344b92651c816e44731613">&#9670;&nbsp;</a></span>vmrun() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2625,7 +630,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="abf41511f3622c46469d79c5c8e020300" name="abf41511f3622c46469d79c5c8e020300"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf41511f3622c46469d79c5c8e020300">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abf41511f3622c46469d79c5c8e020300">&#9670;&nbsp;</a></span>tlb_flush() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2670,7 +675,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8e682e67fa4efe11e3237a403041a7ec" name="a8e682e67fa4efe11e3237a403041a7ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e682e67fa4efe11e3237a403041a7ec">&#9670;&nbsp;</a></span>es_selector() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e682e67fa4efe11e3237a403041a7ec">&#9670;&nbsp;</a></span>es_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2699,7 +704,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aeb0be69f6361f8e77b5570be570ebcfb" name="aeb0be69f6361f8e77b5570be570ebcfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb0be69f6361f8e77b5570be570ebcfb">&#9670;&nbsp;</a></span>cs_selector() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb0be69f6361f8e77b5570be570ebcfb">&#9670;&nbsp;</a></span>cs_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2728,7 +733,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6677d5a8186efd3ce9d13de4e46b60cc" name="a6677d5a8186efd3ce9d13de4e46b60cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6677d5a8186efd3ce9d13de4e46b60cc">&#9670;&nbsp;</a></span>ss_selector() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6677d5a8186efd3ce9d13de4e46b60cc">&#9670;&nbsp;</a></span>ss_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2757,7 +762,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a547c572e73acbf5003191df30ea90d67" name="a547c572e73acbf5003191df30ea90d67"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a547c572e73acbf5003191df30ea90d67">&#9670;&nbsp;</a></span>ds_selector() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a547c572e73acbf5003191df30ea90d67">&#9670;&nbsp;</a></span>ds_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2786,7 +791,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a200693333d84cc5c241066fd44ba1f97" name="a200693333d84cc5c241066fd44ba1f97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a200693333d84cc5c241066fd44ba1f97">&#9670;&nbsp;</a></span>fs_selector() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a200693333d84cc5c241066fd44ba1f97">&#9670;&nbsp;</a></span>fs_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2815,7 +820,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6d16f38fedb82280e2c09b87f45c4da1" name="a6d16f38fedb82280e2c09b87f45c4da1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d16f38fedb82280e2c09b87f45c4da1">&#9670;&nbsp;</a></span>gs_selector() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d16f38fedb82280e2c09b87f45c4da1">&#9670;&nbsp;</a></span>gs_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2844,7 +849,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aef6360a6d49b32f8896469e58d972817" name="aef6360a6d49b32f8896469e58d972817"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef6360a6d49b32f8896469e58d972817">&#9670;&nbsp;</a></span>tr_selector() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aef6360a6d49b32f8896469e58d972817">&#9670;&nbsp;</a></span>tr_selector()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2873,7 +878,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="abd5608b0f721fa2a38b1c64bccc99974" name="abd5608b0f721fa2a38b1c64bccc99974"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd5608b0f721fa2a38b1c64bccc99974">&#9670;&nbsp;</a></span>cr0() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abd5608b0f721fa2a38b1c64bccc99974">&#9670;&nbsp;</a></span>cr0()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2902,7 +907,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a419d77813034cfc77c5db154d0100ab2" name="a419d77813034cfc77c5db154d0100ab2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a419d77813034cfc77c5db154d0100ab2">&#9670;&nbsp;</a></span>cr3() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a419d77813034cfc77c5db154d0100ab2">&#9670;&nbsp;</a></span>cr3()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2931,7 +936,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a23f3f83e0b0a2bd4792c606cc5ec7b04" name="a23f3f83e0b0a2bd4792c606cc5ec7b04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23f3f83e0b0a2bd4792c606cc5ec7b04">&#9670;&nbsp;</a></span>cr4() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f3f83e0b0a2bd4792c606cc5ec7b04">&#9670;&nbsp;</a></span>cr4()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2960,7 +965,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab63c2c3e2e8944b774d4169a35020379" name="ab63c2c3e2e8944b774d4169a35020379"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab63c2c3e2e8944b774d4169a35020379">&#9670;&nbsp;</a></span>set_rpt() <span class="overload">[6/6]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab63c2c3e2e8944b774d4169a35020379">&#9670;&nbsp;</a></span>set_rpt() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2994,7 +999,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3ded778669a4022370fb37a7ab896b59" name="a3ded778669a4022370fb37a7ab896b59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ded778669a4022370fb37a7ab896b59">&#9670;&nbsp;</a></span>set_tp() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3028,7 +1033,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1afec55b62b86fa06b57abb4a46ef86b" name="a1afec55b62b86fa06b57abb4a46ef86b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1afec55b62b86fa06b57abb4a46ef86b">&#9670;&nbsp;</a></span>tls_reg() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1afec55b62b86fa06b57abb4a46ef86b">&#9670;&nbsp;</a></span>tls_reg() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3064,7 +1069,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac45a1927db5ff764babca38522567580" name="ac45a1927db5ff764babca38522567580"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac45a1927db5ff764babca38522567580">&#9670;&nbsp;</a></span>set_tls_reg() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac45a1927db5ff764babca38522567580">&#9670;&nbsp;</a></span>set_tls_reg() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3109,7 +1114,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af153a688aa5e0023598c0069a3aab400" name="af153a688aa5e0023598c0069a3aab400"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af153a688aa5e0023598c0069a3aab400">&#9670;&nbsp;</a></span>rdmsr() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af153a688aa5e0023598c0069a3aab400">&#9670;&nbsp;</a></span>rdmsr() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3145,7 +1150,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a6638ea06bd1a39996aa896e2291e6f20" name="a6638ea06bd1a39996aa896e2291e6f20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6638ea06bd1a39996aa896e2291e6f20">&#9670;&nbsp;</a></span>wrmsr() <span class="overload">[5/5]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6638ea06bd1a39996aa896e2291e6f20">&#9670;&nbsp;</a></span>wrmsr() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3192,7 +1197,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3a603877eb333198942721eefa46c4ec" name="a3a603877eb333198942721eefa46c4ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3a603877eb333198942721eefa46c4ec">&#9670;&nbsp;</a></span>vmld() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a603877eb333198942721eefa46c4ec">&#9670;&nbsp;</a></span>vmld()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3228,7 +1233,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a19e0020e2fba55b09c1327be917f4632" name="a19e0020e2fba55b09c1327be917f4632"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19e0020e2fba55b09c1327be917f4632">&#9670;&nbsp;</a></span>vmcl() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a19e0020e2fba55b09c1327be917f4632">&#9670;&nbsp;</a></span>vmcl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3264,7 +1269,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9c5b06a2c9e9feb788815a1e88a5f819" name="a9c5b06a2c9e9feb788815a1e88a5f819"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9c5b06a2c9e9feb788815a1e88a5f819">&#9670;&nbsp;</a></span>vmrd16() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c5b06a2c9e9feb788815a1e88a5f819">&#9670;&nbsp;</a></span>vmrd16() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3311,7 +1316,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="afc71acd67f2b170f95ab7657874f272c" name="afc71acd67f2b170f95ab7657874f272c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afc71acd67f2b170f95ab7657874f272c">&#9670;&nbsp;</a></span>vmrd16() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afc71acd67f2b170f95ab7657874f272c">&#9670;&nbsp;</a></span>vmrd16() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3347,7 +1352,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ac1244a086a6c56c85e294a4895cd066a" name="ac1244a086a6c56c85e294a4895cd066a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1244a086a6c56c85e294a4895cd066a">&#9670;&nbsp;</a></span>vmrd32() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1244a086a6c56c85e294a4895cd066a">&#9670;&nbsp;</a></span>vmrd32() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3394,7 +1399,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a505977e5dfa5855ba7236544c951b5df" name="a505977e5dfa5855ba7236544c951b5df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a505977e5dfa5855ba7236544c951b5df">&#9670;&nbsp;</a></span>vmrd32() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a505977e5dfa5855ba7236544c951b5df">&#9670;&nbsp;</a></span>vmrd32() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3430,7 +1435,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a3caf041bdfbe63965faef69ff380dc5f" name="a3caf041bdfbe63965faef69ff380dc5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3caf041bdfbe63965faef69ff380dc5f">&#9670;&nbsp;</a></span>vmrd64() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3caf041bdfbe63965faef69ff380dc5f">&#9670;&nbsp;</a></span>vmrd64() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3477,7 +1482,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af6d2370d3429e80b8e29926bda7bb611" name="af6d2370d3429e80b8e29926bda7bb611"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af6d2370d3429e80b8e29926bda7bb611">&#9670;&nbsp;</a></span>vmrd64() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af6d2370d3429e80b8e29926bda7bb611">&#9670;&nbsp;</a></span>vmrd64() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3513,7 +1518,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a1ede8e5a2053f85952fb584837a647e5" name="a1ede8e5a2053f85952fb584837a647e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1ede8e5a2053f85952fb584837a647e5">&#9670;&nbsp;</a></span>vmwr16() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ede8e5a2053f85952fb584837a647e5">&#9670;&nbsp;</a></span>vmwr16()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3560,7 +1565,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a842fef895386d67c5cfcab154445b9e5" name="a842fef895386d67c5cfcab154445b9e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a842fef895386d67c5cfcab154445b9e5">&#9670;&nbsp;</a></span>vmwr32() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a842fef895386d67c5cfcab154445b9e5">&#9670;&nbsp;</a></span>vmwr32()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3607,7 +1612,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad2715e7f279079b0bf69c3c97da54513" name="ad2715e7f279079b0bf69c3c97da54513"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2715e7f279079b0bf69c3c97da54513">&#9670;&nbsp;</a></span>vmwr64() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2715e7f279079b0bf69c3c97da54513">&#9670;&nbsp;</a></span>vmwr64()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3654,7 +1659,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a2615c3408536928fba62e851620161df" name="a2615c3408536928fba62e851620161df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2615c3408536928fba62e851620161df">&#9670;&nbsp;</a></span>vmwrfunc() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2615c3408536928fba62e851620161df">&#9670;&nbsp;</a></span>vmwrfunc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3701,7 +1706,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a7b0d9dd382f1e2c01176ddc1bc7e8e45" name="a7b0d9dd382f1e2c01176ddc1bc7e8e45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7b0d9dd382f1e2c01176ddc1bc7e8e45">&#9670;&nbsp;</a></span>vmrun() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0d9dd382f1e2c01176ddc1bc7e8e45">&#9670;&nbsp;</a></span>vmrun() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3737,10 +1742,6 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>kernel/mocks/<a class="el" href="mocks_2intrinsic__t_8hpp_source.html">intrinsic_t.hpp</a></li>
-<li>kernel/mocks/x64/amd/<a class="el" href="mocks_2x64_2amd_2intrinsic__t_8hpp_source.html">intrinsic_t.hpp</a></li>
-<li>kernel/mocks/x64/intel/<a class="el" href="mocks_2x64_2intel_2intrinsic__t_8hpp_source.html">intrinsic_t.hpp</a></li>
-<li>kernel/mocks/x64/<a class="el" href="mocks_2x64_2intrinsic__t_8hpp_source.html">intrinsic_t.hpp</a></li>
 <li>kernel/src/arm/aarch64/<a class="el" href="src_2arm_2aarch64_2intrinsic__t_8hpp_source.html">intrinsic_t.hpp</a></li>
 <li>kernel/src/x64/amd/<a class="el" href="src_2x64_2amd_2intrinsic__t_8hpp_source.html">intrinsic_t.hpp</a></li>
 <li>kernel/src/x64/intel/<a class="el" href="src_2x64_2intel_2intrinsic__t_8hpp_source.html">intrinsic_t.hpp</a></li>

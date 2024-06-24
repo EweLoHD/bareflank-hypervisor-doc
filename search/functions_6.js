@@ -19,5 +19,5 @@ var searchData=
   ['get_5fvpid_16',['get_vpid',['../namespacemk.html#adfa515649dfbc48d3fe328728ec4ece4',1,'mk']]],
   ['get_5fvsid_17',['get_vsid',['../namespacemk.html#a6b7a280b14132134dd68de49e1c244a2',1,'mk']]],
   ['gs_5finitialize_18',['gs_initialize',['../namespacesyscall.html#a4a4d1a825e37273b8a383684cb0520a0',1,'syscall::gs_initialize(gs_t const &amp;gs, bf_syscall_t const &amp;sys, intrinsic_t const &amp;intrinsic) noexcept -&gt; bsl::errc_type'],['../namespacesyscall.html#a6b221af3c62ca2c8a5d1ff45aa7b9915',1,'syscall::gs_initialize(gs_t &amp;mut_gs, bf_syscall_t &amp;mut_sys, intrinsic_t const &amp;intrinsic) noexcept -&gt; bsl::errc_type']]],
-  ['gs_5fselector_19',['gs_selector',['../classmk_1_1intrinsic__t.html#a6d16f38fedb82280e2c09b87f45c4da1',1,'mk::intrinsic_t::gs_selector() noexcept -&gt; bsl::safe_u16'],['../classmk_1_1intrinsic__t.html#a6d16f38fedb82280e2c09b87f45c4da1',1,'mk::intrinsic_t::gs_selector() noexcept -&gt; bsl::safe_u16']]]
+  ['gs_5fselector_19',['gs_selector',['../classmk_1_1intrinsic__t.html#a6d16f38fedb82280e2c09b87f45c4da1',1,'mk::intrinsic_t']]]
 ];

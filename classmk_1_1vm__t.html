@@ -85,7 +85,6 @@ $(document).ready(function(){initNavTree('classmk_1_1vm__t.html',''); initResiza
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classmk_1_1vm__t-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">mk::vm_t Class Reference<span class="mlabels"><span class="mlabel">final</span></span></div></div>
 </div><!--header-->
@@ -94,43 +93,10 @@ $(document).ready(function(){initNavTree('classmk_1_1vm__t.html',''); initResiza
 <p>Defines the microkernel's notion of a VM.  
  <a href="classmk_1_1vm__t.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="mocks_2vm__t_8hpp_source.html">vm_t.hpp</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="vm__t_8hpp_source.html">vm_t.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2fcb02b07eec4d16e3088b681c71102b"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#a2fcb02b07eec4d16e3088b681c71102b">initialize</a> (bsl::safe_u16 const &amp;i) noexcept</td></tr>
-<tr class="memdesc:a2fcb02b07eec4d16e3088b681c71102b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>.  <a href="classmk_1_1vm__t.html#a2fcb02b07eec4d16e3088b681c71102b">More...</a><br /></td></tr>
-<tr class="separator:a2fcb02b07eec4d16e3088b681c71102b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3b56a84649a174d4f5f3bb20c038a70"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#ae3b56a84649a174d4f5f3bb20c038a70">release</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, <a class="el" href="classmk_1_1ext__pool__t.html">ext_pool_t</a> const &amp;ext_pool) noexcept</td></tr>
-<tr class="memdesc:ae3b56a84649a174d4f5f3bb20c038a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Release the <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>.  <a href="classmk_1_1vm__t.html#ae3b56a84649a174d4f5f3bb20c038a70">More...</a><br /></td></tr>
-<tr class="separator:ae3b56a84649a174d4f5f3bb20c038a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba80cef53ea05ecb4955aba4ea84553b"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#aba80cef53ea05ecb4955aba4ea84553b">id</a> () const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:aba80cef53ea05ecb4955aba4ea84553b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>.  <a href="classmk_1_1vm__t.html#aba80cef53ea05ecb4955aba4ea84553b">More...</a><br /></td></tr>
-<tr class="separator:aba80cef53ea05ecb4955aba4ea84553b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6666ffb8e56c5edf308e73e2c8043ee6"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#a6666ffb8e56c5edf308e73e2c8043ee6">allocate</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, <a class="el" href="classmk_1_1ext__pool__t.html">ext_pool_t</a> const &amp;ext_pool) noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a6666ffb8e56c5edf308e73e2c8043ee6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allocates this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>.  <a href="classmk_1_1vm__t.html#a6666ffb8e56c5edf308e73e2c8043ee6">More...</a><br /></td></tr>
-<tr class="separator:a6666ffb8e56c5edf308e73e2c8043ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd4f8346b79c048bae68859b5aeaac97"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#acd4f8346b79c048bae68859b5aeaac97">deallocate</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls, <a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;page_pool, <a class="el" href="classmk_1_1ext__pool__t.html">ext_pool_t</a> const &amp;ext_pool) noexcept</td></tr>
-<tr class="memdesc:acd4f8346b79c048bae68859b5aeaac97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deallocates this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>.  <a href="classmk_1_1vm__t.html#acd4f8346b79c048bae68859b5aeaac97">More...</a><br /></td></tr>
-<tr class="separator:acd4f8346b79c048bae68859b5aeaac97"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa50cec98e6e9e9a3be4588aaf0ff9c89"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#aa50cec98e6e9e9a3be4588aaf0ff9c89">is_deallocated</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:aa50cec98e6e9e9a3be4588aaf0ff9c89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is deallocated, false otherwise.  <a href="classmk_1_1vm__t.html#aa50cec98e6e9e9a3be4588aaf0ff9c89">More...</a><br /></td></tr>
-<tr class="separator:aa50cec98e6e9e9a3be4588aaf0ff9c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4acea26f67479244685c3d3717fd34e"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#ab4acea26f67479244685c3d3717fd34e">is_allocated</a> () const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:ab4acea26f67479244685c3d3717fd34e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is allocated, false otherwise.  <a href="classmk_1_1vm__t.html#ab4acea26f67479244685c3d3717fd34e">More...</a><br /></td></tr>
-<tr class="separator:ab4acea26f67479244685c3d3717fd34e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9418cc4ba25a966c0f1a1392928729f4"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#a9418cc4ba25a966c0f1a1392928729f4">set_active</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;mut_tls) noexcept</td></tr>
-<tr class="memdesc:a9418cc4ba25a966c0f1a1392928729f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> as active.  <a href="classmk_1_1vm__t.html#a9418cc4ba25a966c0f1a1392928729f4">More...</a><br /></td></tr>
-<tr class="separator:a9418cc4ba25a966c0f1a1392928729f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a168f5ea86b5af81d6f42ceb075875699"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#a168f5ea86b5af81d6f42ceb075875699">set_inactive</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;mut_tls) noexcept</td></tr>
-<tr class="memdesc:a168f5ea86b5af81d6f42ceb075875699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> as inactive.  <a href="classmk_1_1vm__t.html#a168f5ea86b5af81d6f42ceb075875699">More...</a><br /></td></tr>
-<tr class="separator:a168f5ea86b5af81d6f42ceb075875699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a165bf2c6855ea3c37d91b8e14f44ab48"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#a165bf2c6855ea3c37d91b8e14f44ab48">is_active</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls) const noexcept -&gt; bsl::safe_u16</td></tr>
-<tr class="memdesc:a165bf2c6855ea3c37d91b8e14f44ab48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ID of the first identified PP this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is active on. If the <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is not active, bsl::safe_u16::failure() is returned.  <a href="classmk_1_1vm__t.html#a165bf2c6855ea3c37d91b8e14f44ab48">More...</a><br /></td></tr>
-<tr class="separator:a165bf2c6855ea3c37d91b8e14f44ab48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e7b775a42757c3a5bc0f798954147b"><td class="memItemLeft" align="right" valign="top">constexpr auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#ae8e7b775a42757c3a5bc0f798954147b">is_active_on_this_pp</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls) const noexcept -&gt; bool</td></tr>
-<tr class="memdesc:ae8e7b775a42757c3a5bc0f798954147b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is active on the current PP, false otherwise.  <a href="classmk_1_1vm__t.html#ae8e7b775a42757c3a5bc0f798954147b">More...</a><br /></td></tr>
-<tr class="separator:ae8e7b775a42757c3a5bc0f798954147b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fcb02b07eec4d16e3088b681c71102b"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#a2fcb02b07eec4d16e3088b681c71102b">initialize</a> (bsl::safe_u16 const &amp;i) noexcept</td></tr>
 <tr class="memdesc:a2fcb02b07eec4d16e3088b681c71102b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>.  <a href="classmk_1_1vm__t.html#a2fcb02b07eec4d16e3088b681c71102b">More...</a><br /></td></tr>
 <tr class="separator:a2fcb02b07eec4d16e3088b681c71102b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -167,471 +133,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e5da2695382b1900dbdc09dfa8fb2d7"><td class="memItemLeft" align="right" valign="top">constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#a0e5da2695382b1900dbdc09dfa8fb2d7">dump</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls) const noexcept</td></tr>
 <tr class="memdesc:a0e5da2695382b1900dbdc09dfa8fb2d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>.  <a href="classmk_1_1vm__t.html#a0e5da2695382b1900dbdc09dfa8fb2d7">More...</a><br /></td></tr>
 <tr class="separator:a0e5da2695382b1900dbdc09dfa8fb2d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a59be9bc4228ce794438d04fec66d2f8f"><td class="memItemLeft" align="right" valign="top">static constexpr void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmk_1_1vm__t.html#a59be9bc4228ce794438d04fec66d2f8f">dump</a> (<a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;tls) noexcept</td></tr>
-<tr class="memdesc:a59be9bc4228ce794438d04fec66d2f8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dumps the <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>.  <a href="classmk_1_1vm__t.html#a59be9bc4228ce794438d04fec66d2f8f">More...</a><br /></td></tr>
-<tr class="separator:a59be9bc4228ce794438d04fec66d2f8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >Defines the microkernel's notion of a VM. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a2fcb02b07eec4d16e3088b681c71102b" name="a2fcb02b07eec4d16e3088b681c71102b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fcb02b07eec4d16e3088b681c71102b">&#9670;&nbsp;</a></span>initialize() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vm_t::initialize </td>
-          <td>(</td>
-          <td class="paramtype">bsl::safe_u16 const &amp;&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Initializes this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>the ID for this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae3b56a84649a174d4f5f3bb20c038a70" name="ae3b56a84649a174d4f5f3bb20c038a70"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3b56a84649a174d4f5f3bb20c038a70">&#9670;&nbsp;</a></span>release() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vm_t::release </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1ext__pool__t.html">ext_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ext_pool</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Release the <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">ext_pool</td><td>the <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a> to use </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aba80cef53ea05ecb4955aba4ea84553b" name="aba80cef53ea05ecb4955aba4ea84553b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba80cef53ea05ecb4955aba4ea84553b">&#9670;&nbsp;</a></span>id() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vm_t::id </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the ID of this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns the ID of this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> </dd></dl>
-
-</div>
-</div>
-<a id="a6666ffb8e56c5edf308e73e2c8043ee6" name="a6666ffb8e56c5edf308e73e2c8043ee6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6666ffb8e56c5edf308e73e2c8043ee6">&#9670;&nbsp;</a></span>allocate() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vm_t::allocate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1ext__pool__t.html">ext_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ext_pool</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Allocates this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">ext_pool</td><td>the <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a> to use </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns ID of the newly allocated <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> </dd></dl>
-
-</div>
-</div>
-<a id="acd4f8346b79c048bae68859b5aeaac97" name="acd4f8346b79c048bae68859b5aeaac97"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd4f8346b79c048bae68859b5aeaac97">&#9670;&nbsp;</a></span>deallocate() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vm_t::deallocate </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespacemk.html#ac368255bdd961fd8997f08099b0f0947">page_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>page_pool</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classmk_1_1ext__pool__t.html">ext_pool_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>ext_pool</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Deallocates this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-    <tr><td class="paramname">page_pool</td><td>the page_pool_t to use </td></tr>
-    <tr><td class="paramname">ext_pool</td><td>the <a class="el" href="classmk_1_1ext__pool__t.html" title="Defines the microkernel&#39;s extension pool.">ext_pool_t</a> to use </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa50cec98e6e9e9a3be4588aaf0ff9c89" name="aa50cec98e6e9e9a3be4588aaf0ff9c89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa50cec98e6e9e9a3be4588aaf0ff9c89">&#9670;&nbsp;</a></span>is_deallocated() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vm_t::is_deallocated </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; bool
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is deallocated, false otherwise. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is deallocated, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="ab4acea26f67479244685c3d3717fd34e" name="ab4acea26f67479244685c3d3717fd34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4acea26f67479244685c3d3717fd34e">&#9670;&nbsp;</a></span>is_allocated() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vm_t::is_allocated </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const -&gt; bool
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is allocated, false otherwise. </p>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is allocated, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a9418cc4ba25a966c0f1a1392928729f4" name="a9418cc4ba25a966c0f1a1392928729f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9418cc4ba25a966c0f1a1392928729f4">&#9670;&nbsp;</a></span>set_active() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vm_t::set_active </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>mut_tls</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> as active. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mut_tls</td><td>the current TLS block </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a168f5ea86b5af81d6f42ceb075875699" name="a168f5ea86b5af81d6f42ceb075875699"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a168f5ea86b5af81d6f42ceb075875699">&#9670;&nbsp;</a></span>set_inactive() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr void mk::vm_t::set_inactive </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> &amp;&#160;</td>
-          <td class="paramname"><em>mut_tls</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Sets this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> as inactive. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">mut_tls</td><td>the current TLS block </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a165bf2c6855ea3c37d91b8e14f44ab48" name="a165bf2c6855ea3c37d91b8e14f44ab48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a165bf2c6855ea3c37d91b8e14f44ab48">&#9670;&nbsp;</a></span>is_active() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vm_t::is_active </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em></td><td>)</td>
-          <td> const -&gt; bsl::safe_u16
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns the ID of the first identified PP this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is active on. If the <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is not active, bsl::safe_u16::failure() is returned. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns the ID of the first identified PP this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is active on. If the <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is not active, bsl::safe_u16::failure() is returned. </dd></dl>
-
-</div>
-</div>
-<a id="ae8e7b775a42757c3a5bc0f798954147b" name="ae8e7b775a42757c3a5bc0f798954147b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e7b775a42757c3a5bc0f798954147b">&#9670;&nbsp;</a></span>is_active_on_this_pp() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr auto mk::vm_t::is_active_on_this_pp </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em></td><td>)</td>
-          <td> const -&gt; bool
-        </td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is active on the current PP, false otherwise. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Returns true if this <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a> is active on the current PP, false otherwise </dd></dl>
-
-</div>
-</div>
-<a id="a59be9bc4228ce794438d04fec66d2f8f" name="a59be9bc4228ce794438d04fec66d2f8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a59be9bc4228ce794438d04fec66d2f8f">&#9670;&nbsp;</a></span>dump() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static constexpr void mk::vm_t::dump </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structmk_1_1tls__t.html">tls_t</a> const &amp;&#160;</td>
-          <td class="paramname"><em>tls</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Dumps the <a class="el" href="classmk_1_1vm__t.html" title="Defines the microkernel&#39;s notion of a VM.">vm_t</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tls</td><td>the current TLS block </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a2fcb02b07eec4d16e3088b681c71102b" name="a2fcb02b07eec4d16e3088b681c71102b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fcb02b07eec4d16e3088b681c71102b">&#9670;&nbsp;</a></span>initialize() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fcb02b07eec4d16e3088b681c71102b">&#9670;&nbsp;</a></span>initialize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -665,7 +172,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ad29b45d8be672f29005583bc3cb2be0f" name="ad29b45d8be672f29005583bc3cb2be0f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad29b45d8be672f29005583bc3cb2be0f">&#9670;&nbsp;</a></span>release() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad29b45d8be672f29005583bc3cb2be0f">&#9670;&nbsp;</a></span>release()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -717,7 +224,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aba80cef53ea05ecb4955aba4ea84553b" name="aba80cef53ea05ecb4955aba4ea84553b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba80cef53ea05ecb4955aba4ea84553b">&#9670;&nbsp;</a></span>id() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aba80cef53ea05ecb4955aba4ea84553b">&#9670;&nbsp;</a></span>id()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -746,7 +253,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="acc50b61fad005a84a2cf823cf4d5abbd" name="acc50b61fad005a84a2cf823cf4d5abbd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc50b61fad005a84a2cf823cf4d5abbd">&#9670;&nbsp;</a></span>allocate() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acc50b61fad005a84a2cf823cf4d5abbd">&#9670;&nbsp;</a></span>allocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -800,7 +307,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="af0f3e65a612954c51cc29761003062d0" name="af0f3e65a612954c51cc29761003062d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0f3e65a612954c51cc29761003062d0">&#9670;&nbsp;</a></span>deallocate() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0f3e65a612954c51cc29761003062d0">&#9670;&nbsp;</a></span>deallocate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -852,7 +359,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="aa50cec98e6e9e9a3be4588aaf0ff9c89" name="aa50cec98e6e9e9a3be4588aaf0ff9c89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa50cec98e6e9e9a3be4588aaf0ff9c89">&#9670;&nbsp;</a></span>is_deallocated() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aa50cec98e6e9e9a3be4588aaf0ff9c89">&#9670;&nbsp;</a></span>is_deallocated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -881,7 +388,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab4acea26f67479244685c3d3717fd34e" name="ab4acea26f67479244685c3d3717fd34e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4acea26f67479244685c3d3717fd34e">&#9670;&nbsp;</a></span>is_allocated() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4acea26f67479244685c3d3717fd34e">&#9670;&nbsp;</a></span>is_allocated()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -910,7 +417,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a9418cc4ba25a966c0f1a1392928729f4" name="a9418cc4ba25a966c0f1a1392928729f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9418cc4ba25a966c0f1a1392928729f4">&#9670;&nbsp;</a></span>set_active() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9418cc4ba25a966c0f1a1392928729f4">&#9670;&nbsp;</a></span>set_active()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -944,7 +451,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a168f5ea86b5af81d6f42ceb075875699" name="a168f5ea86b5af81d6f42ceb075875699"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a168f5ea86b5af81d6f42ceb075875699">&#9670;&nbsp;</a></span>set_inactive() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a168f5ea86b5af81d6f42ceb075875699">&#9670;&nbsp;</a></span>set_inactive()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -978,7 +485,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a165bf2c6855ea3c37d91b8e14f44ab48" name="a165bf2c6855ea3c37d91b8e14f44ab48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a165bf2c6855ea3c37d91b8e14f44ab48">&#9670;&nbsp;</a></span>is_active() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a165bf2c6855ea3c37d91b8e14f44ab48">&#9670;&nbsp;</a></span>is_active()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1014,7 +521,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="ae8e7b775a42757c3a5bc0f798954147b" name="ae8e7b775a42757c3a5bc0f798954147b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8e7b775a42757c3a5bc0f798954147b">&#9670;&nbsp;</a></span>is_active_on_this_pp() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8e7b775a42757c3a5bc0f798954147b">&#9670;&nbsp;</a></span>is_active_on_this_pp()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1050,7 +557,7 @@ Static Public Member Functions</h2></td></tr>
 </div>
 </div>
 <a id="a0e5da2695382b1900dbdc09dfa8fb2d7" name="a0e5da2695382b1900dbdc09dfa8fb2d7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e5da2695382b1900dbdc09dfa8fb2d7">&#9670;&nbsp;</a></span>dump() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e5da2695382b1900dbdc09dfa8fb2d7">&#9670;&nbsp;</a></span>dump()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1087,9 +594,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
-<li>kernel/mocks/<a class="el" href="mocks_2vm__t_8hpp_source.html">vm_t.hpp</a></li>
-<li>kernel/src/<a class="el" href="src_2vm__t_8hpp_source.html">vm_t.hpp</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>kernel/src/<a class="el" href="vm__t_8hpp_source.html">vm_t.hpp</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
