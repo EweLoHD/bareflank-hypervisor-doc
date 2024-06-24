@@ -1,0 +1,27 @@
+var structmk_1_1vmexit__log__record__t =
+[
+    [ "vmid", "structmk_1_1vmexit__log__record__t.html#a46aa40446b82f5da319fb3c1baae807e", null ],
+    [ "vpid", "structmk_1_1vmexit__log__record__t.html#af2d802c2d4830725b1cbc6769b0d828d", null ],
+    [ "vsid", "structmk_1_1vmexit__log__record__t.html#abea183828d24356fd994f21f9e012501", null ],
+    [ "exit_reason", "structmk_1_1vmexit__log__record__t.html#a48417ceb39dd4cfa7fbcfd0c15b6ebf9", null ],
+    [ "ei1", "structmk_1_1vmexit__log__record__t.html#a7d1abb47cec9a749d158556b4fb9bfa2", null ],
+    [ "ei2", "structmk_1_1vmexit__log__record__t.html#aeb5d75f2fdd9d690b30e3e5db60ea066", null ],
+    [ "ei3", "structmk_1_1vmexit__log__record__t.html#af368b91e63811ec6749020124a6e2f84", null ],
+    [ "rax", "structmk_1_1vmexit__log__record__t.html#a6d5d43128015b5c8a4126b876fbe032f", null ],
+    [ "rbx", "structmk_1_1vmexit__log__record__t.html#a9bcec485b569f00a14e9b82608ddd8d3", null ],
+    [ "rcx", "structmk_1_1vmexit__log__record__t.html#a20f03b57f849943f985d0e5d85277b7f", null ],
+    [ "rdx", "structmk_1_1vmexit__log__record__t.html#a93ee26dbda53ba2283ac93e2cafd7914", null ],
+    [ "rbp", "structmk_1_1vmexit__log__record__t.html#a2863f13b54ce7019e54aaaed0fcf5cc5", null ],
+    [ "rsi", "structmk_1_1vmexit__log__record__t.html#a4adde520fb20fed2fcbef3ed335855c9", null ],
+    [ "rdi", "structmk_1_1vmexit__log__record__t.html#a40d25e183ed972bb8d3ff374b052797b", null ],
+    [ "r8", "structmk_1_1vmexit__log__record__t.html#acbcfe4f0a8e108cde285be54e49fef49", null ],
+    [ "r9", "structmk_1_1vmexit__log__record__t.html#afe5176f52ab0610d26820cb9852167ca", null ],
+    [ "r10", "structmk_1_1vmexit__log__record__t.html#a4ae715673021d944af50a1d409b8cc2f", null ],
+    [ "r11", "structmk_1_1vmexit__log__record__t.html#aeef932aba7bc6a2ca8c3b81b31dde805", null ],
+    [ "r12", "structmk_1_1vmexit__log__record__t.html#a83b1885c5bb1e44889ba0e7821e5ca5f", null ],
+    [ "r13", "structmk_1_1vmexit__log__record__t.html#a539fd3d75eba7d88b44d96cd5629a98b", null ],
+    [ "r14", "structmk_1_1vmexit__log__record__t.html#ad9da1b2f760268e9a5ebedb39085fd00", null ],
+    [ "r15", "structmk_1_1vmexit__log__record__t.html#affeca6a6de1b4875f73678435b916ca6", null ],
+    [ "rsp", "structmk_1_1vmexit__log__record__t.html#a3485bf293c7b82d66dcc81488f59a6c6", null ],
+    [ "rip", "structmk_1_1vmexit__log__record__t.html#a895f8a02583d287bbea7537618a9f554", null ]
+];

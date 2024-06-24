@@ -1,0 +1,27 @@
+var dir_6ef0afb86aa4db6ab9f6c968ccb991fc =
+[
+    [ "amd", "dir_38a240260e514c4b4665f5f1b4ea2e3c.html", "dir_38a240260e514c4b4665f5f1b4ea2e3c" ],
+    [ "intel", "dir_6869cfa063e52314a27f5cd886427415.html", "dir_6869cfa063e52314a27f5cd886427415" ],
+    [ "dispatch_esr.hpp", "src_2x64_2dispatch__esr_8hpp_source.html", null ],
+    [ "dispatch_syscall_bf_intrinsic_op.hpp", "src_2x64_2dispatch__syscall__bf__intrinsic__op_8hpp_source.html", null ],
+    [ "intrinsic_cr0.hpp", "src_2x64_2intrinsic__cr0_8hpp_source.html", null ],
+    [ "intrinsic_cr3.hpp", "src_2x64_2intrinsic__cr3_8hpp_source.html", null ],
+    [ "intrinsic_cr4.hpp", "src_2x64_2intrinsic__cr4_8hpp_source.html", null ],
+    [ "intrinsic_cs_selector.hpp", "src_2x64_2intrinsic__cs__selector_8hpp_source.html", null ],
+    [ "intrinsic_ds_selector.hpp", "src_2x64_2intrinsic__ds__selector_8hpp_source.html", null ],
+    [ "intrinsic_es_selector.hpp", "src_2x64_2intrinsic__es__selector_8hpp_source.html", null ],
+    [ "intrinsic_fs_selector.hpp", "src_2x64_2intrinsic__fs__selector_8hpp_source.html", null ],
+    [ "intrinsic_gs_selector.hpp", "src_2x64_2intrinsic__gs__selector_8hpp_source.html", null ],
+    [ "intrinsic_invlpg.hpp", "src_2x64_2intrinsic__invlpg_8hpp_source.html", null ],
+    [ "intrinsic_rdmsr.hpp", "src_2x64_2intrinsic__rdmsr_8hpp_source.html", null ],
+    [ "intrinsic_set_cr3.hpp", "src_2x64_2intrinsic__set__cr3_8hpp_source.html", null ],
+    [ "intrinsic_set_tls_reg.hpp", "src_2x64_2intrinsic__set__tls__reg_8hpp_source.html", null ],
+    [ "intrinsic_set_tp.hpp", "src_2x64_2intrinsic__set__tp_8hpp_source.html", null ],
+    [ "intrinsic_ss_selector.hpp", "src_2x64_2intrinsic__ss__selector_8hpp_source.html", null ],
+    [ "intrinsic_tls_reg.hpp", "src_2x64_2intrinsic__tls__reg_8hpp_source.html", null ],
+    [ "intrinsic_tr_selector.hpp", "src_2x64_2intrinsic__tr__selector_8hpp_source.html", null ],
+    [ "intrinsic_wrmsr.hpp", "src_2x64_2intrinsic__wrmsr_8hpp_source.html", null ],
+    [ "root_page_table_helpers.hpp", "src_2x64_2root__page__table__helpers_8hpp_source.html", null ],
+    [ "tls_t.hpp", "src_2x64_2tls__t_8hpp_source.html", null ],
+    [ "vmexit_log_t.hpp", "src_2x64_2vmexit__log__t_8hpp_source.html", null ]
+];
